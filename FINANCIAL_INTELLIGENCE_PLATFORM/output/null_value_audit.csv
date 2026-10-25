@@ -1,0 +1,120 @@
+table,column,total_rows,null_count,null_percentage,source_contains_value,recommended_action,reason
+companies,company_id,100,0,0.0,False,NO_ACTION,no nulls
+companies,company_name,100,0,0.0,True,NO_ACTION,no nulls
+companies,broad_sector,100,8,8.0,False,KEEP_NULL,source has no value for this field (genuinely missing)
+companies,sub_sector,100,8,8.0,False,KEEP_NULL,source has no value for this field (genuinely missing)
+companies,market_cap_category,100,8,8.0,False,KEEP_NULL,source has no value for this field (genuinely missing)
+companies,nse_ticker,100,0,0.0,False,NO_ACTION,no nulls
+companies,bse_ticker,100,0,0.0,False,NO_ACTION,no nulls
+companies,roe_percentage,100,10,10.0,True,INVESTIGATE,could not determine source status; manual check needed
+companies,roce_percentage,100,9,9.0,True,INVESTIGATE,could not determine source status; manual check needed
+companies,about,100,8,8.0,False,KEEP_NULL,source has no value for this field (genuinely missing)
+sectors,sector_id,10,0,0.0,,NO_ACTION,no nulls
+sectors,broad_sector,10,0,0.0,,NO_ACTION,no nulls
+sectors,company_count,10,0,0.0,,NO_ACTION,no nulls
+sectors,median_roe,10,0,0.0,False,NO_ACTION,no nulls
+sectors,median_pe,10,0,0.0,False,NO_ACTION,no nulls
+sectors,median_de,10,0,0.0,False,NO_ACTION,no nulls
+profitandloss,company_id,1263,0,0.0,True,NO_ACTION,no nulls
+profitandloss,year,1263,0,0.0,True,NO_ACTION,no nulls
+profitandloss,sales,1263,0,0.0,True,NO_ACTION,no nulls
+profitandloss,operating_profit,1263,13,1.03,True,INVESTIGATE,could not determine source status; manual check needed
+profitandloss,opm_percentage,1263,15,1.19,True,INVESTIGATE,could not determine source status; manual check needed
+profitandloss,other_income,1263,0,0.0,True,NO_ACTION,no nulls
+profitandloss,interest,1263,0,0.0,True,NO_ACTION,no nulls
+profitandloss,depreciation,1263,0,0.0,True,NO_ACTION,no nulls
+profitandloss,profit_before_tax,1263,0,0.0,True,NO_ACTION,no nulls
+profitandloss,tax,1263,94,7.44,False,KEEP_NULL,source has no value for this field (genuinely missing)
+profitandloss,net_profit,1263,0,0.0,True,NO_ACTION,no nulls
+profitandloss,eps,1263,5,0.4,True,INVESTIGATE,could not determine source status; manual check needed
+profitandloss,dividend_payout_ratio,1263,102,8.08,False,KEEP_NULL,source has no value for this field (genuinely missing)
+balancesheet,company_id,1137,0,0.0,True,NO_ACTION,no nulls
+balancesheet,year,1137,0,0.0,True,NO_ACTION,no nulls
+balancesheet,equity_capital,1137,0,0.0,True,NO_ACTION,no nulls
+balancesheet,reserves,1137,0,0.0,True,NO_ACTION,no nulls
+balancesheet,borrowings,1137,0,0.0,True,NO_ACTION,no nulls
+balancesheet,other_liabilities,1137,0,0.0,True,NO_ACTION,no nulls
+balancesheet,total_liabilities,1137,0,0.0,True,NO_ACTION,no nulls
+balancesheet,fixed_assets,1137,0,0.0,True,NO_ACTION,no nulls
+balancesheet,investments,1137,0,0.0,True,NO_ACTION,no nulls
+balancesheet,other_assets,1137,0,0.0,False,NO_ACTION,no nulls
+balancesheet,total_assets,1137,0,0.0,True,NO_ACTION,no nulls
+cashflow,company_id,1152,0,0.0,True,NO_ACTION,no nulls
+cashflow,year,1152,0,0.0,True,NO_ACTION,no nulls
+cashflow,operating_activity,1152,2,0.17,True,INVESTIGATE,could not determine source status; manual check needed
+cashflow,investing_activity,1152,2,0.17,True,INVESTIGATE,could not determine source status; manual check needed
+cashflow,financing_activity,1152,2,0.17,True,INVESTIGATE,could not determine source status; manual check needed
+cashflow,net_cash_flow,1152,0,0.0,True,NO_ACTION,no nulls
+analysis,analysis_id,20,0,0.0,False,NO_ACTION,no nulls
+analysis,company_id,20,0,0.0,True,NO_ACTION,no nulls
+analysis,compounded_sales_growth,20,0,0.0,True,NO_ACTION,no nulls
+analysis,compounded_profit_growth,20,0,0.0,True,NO_ACTION,no nulls
+analysis,stock_price_cagr,20,0,0.0,True,NO_ACTION,no nulls
+analysis,roe,20,0,0.0,True,NO_ACTION,no nulls
+documents,company_id,1584,0,0.0,True,NO_ACTION,no nulls
+documents,year,1584,0,0.0,True,NO_ACTION,no nulls
+documents,report_url,1584,375,23.67,False,KEEP_NULL,source has no value for this field (genuinely missing)
+prosandcons,company_id,26,0,0.0,True,NO_ACTION,no nulls
+prosandcons,type,26,0,0.0,False,NO_ACTION,no nulls
+prosandcons,description,26,0,0.0,False,NO_ACTION,no nulls
+peer_groups,peer_group_name,56,0,0.0,,NO_ACTION,no nulls
+peer_groups,company_id,56,0,0.0,,NO_ACTION,no nulls
+peer_groups,is_benchmark,56,0,0.0,,NO_ACTION,no nulls
+stock_prices,company_id,5520,0,0.0,,NO_ACTION,no nulls
+stock_prices,date,5520,0,0.0,,NO_ACTION,no nulls
+stock_prices,close_price,5520,0,0.0,,NO_ACTION,no nulls
+stock_prices,market_cap_crore,5520,0,0.0,,NO_ACTION,no nulls
+stock_prices,pe_ratio,5520,0,0.0,,NO_ACTION,no nulls
+stock_prices,pb_ratio,5520,0,0.0,,NO_ACTION,no nulls
+stock_prices,dividend_yield,5520,0,0.0,,NO_ACTION,no nulls
+financial_ratios,company_id,1263,0,0.0,True,NO_ACTION,no nulls
+financial_ratios,year,1263,0,0.0,True,NO_ACTION,no nulls
+financial_ratios,net_profit_margin_pct,1263,1,0.08,False,KEEP_NULL,"financial_ratios NULL when underlying PL/BS/CF missing or formula yields None (e.g., interest 0 -> ICR NULL)"
+financial_ratios,operating_profit_margin_pct,1263,14,1.11,False,KEEP_NULL,"financial_ratios NULL when underlying PL/BS/CF missing or formula yields None (e.g., interest 0 -> ICR NULL)"
+financial_ratios,return_on_equity_pct,1263,126,9.98,False,KEEP_NULL,"financial_ratios NULL when underlying PL/BS/CF missing or formula yields None (e.g., interest 0 -> ICR NULL)"
+financial_ratios,return_on_capital_employed_pct,1263,138,10.93,False,KEEP_NULL,"financial_ratios NULL when underlying PL/BS/CF missing or formula yields None (e.g., interest 0 -> ICR NULL)"
+financial_ratios,return_on_assets_pct,1263,127,10.06,False,KEEP_NULL,"financial_ratios NULL when underlying PL/BS/CF missing or formula yields None (e.g., interest 0 -> ICR NULL)"
+financial_ratios,debt_to_equity,1263,126,9.98,False,KEEP_NULL,"financial_ratios NULL when underlying PL/BS/CF missing or formula yields None (e.g., interest 0 -> ICR NULL)"
+financial_ratios,interest_coverage,1263,34,2.69,False,KEEP_NULL,"financial_ratios NULL when underlying PL/BS/CF missing or formula yields None (e.g., interest 0 -> ICR NULL)"
+financial_ratios,icr_label,1263,1229,97.31,False,KEEP_NULL,"financial_ratios NULL when underlying PL/BS/CF missing or formula yields None (e.g., interest 0 -> ICR NULL)"
+financial_ratios,high_leverage_flag,1263,0,0.0,False,NO_ACTION,no nulls
+financial_ratios,icr_warning_flag,1263,0,0.0,False,NO_ACTION,no nulls
+financial_ratios,net_debt_cr,1263,126,9.98,False,KEEP_NULL,"financial_ratios NULL when underlying PL/BS/CF missing or formula yields None (e.g., interest 0 -> ICR NULL)"
+financial_ratios,asset_turnover,1263,127,10.06,False,KEEP_NULL,"financial_ratios NULL when underlying PL/BS/CF missing or formula yields None (e.g., interest 0 -> ICR NULL)"
+financial_ratios,free_cash_flow_cr,1263,113,8.95,False,KEEP_NULL,"financial_ratios NULL when underlying PL/BS/CF missing or formula yields None (e.g., interest 0 -> ICR NULL)"
+financial_ratios,capex_cr,1263,0,0.0,False,NO_ACTION,no nulls
+financial_ratios,capex_intensity_pct,1263,287,22.72,False,KEEP_NULL,"financial_ratios NULL when underlying PL/BS/CF missing or formula yields None (e.g., interest 0 -> ICR NULL)"
+financial_ratios,fcf_conversion_pct,1263,126,9.98,False,KEEP_NULL,"financial_ratios NULL when underlying PL/BS/CF missing or formula yields None (e.g., interest 0 -> ICR NULL)"
+financial_ratios,earnings_per_share,1263,5,0.4,False,KEEP_NULL,"financial_ratios NULL when underlying PL/BS/CF missing or formula yields None (e.g., interest 0 -> ICR NULL)"
+financial_ratios,book_value_per_share,1263,130,10.29,False,KEEP_NULL,"financial_ratios NULL when underlying PL/BS/CF missing or formula yields None (e.g., interest 0 -> ICR NULL)"
+financial_ratios,dividend_payout_ratio_pct,1263,102,8.08,False,KEEP_NULL,"financial_ratios NULL when underlying PL/BS/CF missing or formula yields None (e.g., interest 0 -> ICR NULL)"
+financial_ratios,total_debt_cr,1263,126,9.98,False,KEEP_NULL,"financial_ratios NULL when underlying PL/BS/CF missing or formula yields None (e.g., interest 0 -> ICR NULL)"
+financial_ratios,cash_from_operations_cr,1263,113,8.95,False,KEEP_NULL,"financial_ratios NULL when underlying PL/BS/CF missing or formula yields None (e.g., interest 0 -> ICR NULL)"
+financial_ratios,revenue_cagr_3yr,1263,401,31.75,False,KEEP_NULL,"financial_ratios NULL when underlying PL/BS/CF missing or formula yields None (e.g., interest 0 -> ICR NULL)"
+financial_ratios,revenue_cagr_5yr,1263,597,47.27,False,KEEP_NULL,"financial_ratios NULL when underlying PL/BS/CF missing or formula yields None (e.g., interest 0 -> ICR NULL)"
+financial_ratios,revenue_cagr_10yr,1263,1079,85.43,False,KEEP_NULL,"financial_ratios NULL when underlying PL/BS/CF missing or formula yields None (e.g., interest 0 -> ICR NULL)"
+financial_ratios,pat_cagr_3yr,1263,509,40.3,False,KEEP_NULL,"financial_ratios NULL when underlying PL/BS/CF missing or formula yields None (e.g., interest 0 -> ICR NULL)"
+financial_ratios,pat_cagr_5yr,1263,674,53.37,False,KEEP_NULL,"financial_ratios NULL when underlying PL/BS/CF missing or formula yields None (e.g., interest 0 -> ICR NULL)"
+financial_ratios,pat_cagr_10yr,1263,1091,86.38,False,KEEP_NULL,"financial_ratios NULL when underlying PL/BS/CF missing or formula yields None (e.g., interest 0 -> ICR NULL)"
+financial_ratios,eps_cagr_3yr,1263,514,40.7,False,KEEP_NULL,"financial_ratios NULL when underlying PL/BS/CF missing or formula yields None (e.g., interest 0 -> ICR NULL)"
+financial_ratios,eps_cagr_5yr,1263,680,53.84,False,KEEP_NULL,"financial_ratios NULL when underlying PL/BS/CF missing or formula yields None (e.g., interest 0 -> ICR NULL)"
+financial_ratios,eps_cagr_10yr,1263,1094,86.62,False,KEEP_NULL,"financial_ratios NULL when underlying PL/BS/CF missing or formula yields None (e.g., interest 0 -> ICR NULL)"
+financial_ratios,fcf_cagr_3yr,1263,820,64.92,False,KEEP_NULL,"financial_ratios NULL when underlying PL/BS/CF missing or formula yields None (e.g., interest 0 -> ICR NULL)"
+financial_ratios,fcf_cagr_5yr,1263,916,72.53,False,KEEP_NULL,"financial_ratios NULL when underlying PL/BS/CF missing or formula yields None (e.g., interest 0 -> ICR NULL)"
+financial_ratios,fcf_cagr_10yr,1263,1180,93.43,False,KEEP_NULL,"financial_ratios NULL when underlying PL/BS/CF missing or formula yields None (e.g., interest 0 -> ICR NULL)"
+financial_ratios,revenue_cagr_5yr_flag,1263,0,0.0,False,NO_ACTION,no nulls
+financial_ratios,pat_cagr_5yr_flag,1263,0,0.0,False,NO_ACTION,no nulls
+financial_ratios,eps_cagr_5yr_flag,1263,0,0.0,False,NO_ACTION,no nulls
+financial_ratios,fcf_cagr_3yr_flag,1263,0,0.0,False,NO_ACTION,no nulls
+financial_ratios,fcf_cagr_5yr_flag,1263,0,0.0,False,NO_ACTION,no nulls
+financial_ratios,fcf_cagr_10yr_flag,1263,0,0.0,False,NO_ACTION,no nulls
+financial_ratios,cfo_quality_score,1263,114,9.03,False,KEEP_NULL,"financial_ratios NULL when underlying PL/BS/CF missing or formula yields None (e.g., interest 0 -> ICR NULL)"
+financial_ratios,cfo_quality_label,1263,114,9.03,False,KEEP_NULL,"financial_ratios NULL when underlying PL/BS/CF missing or formula yields None (e.g., interest 0 -> ICR NULL)"
+financial_ratios,composite_quality_score,1263,0,0.0,False,NO_ACTION,no nulls
+financial_ratios,sector_relative_score,1263,99,7.84,False,KEEP_NULL,"financial_ratios NULL when underlying PL/BS/CF missing or formula yields None (e.g., interest 0 -> ICR NULL)"
+peer_percentiles,company_id,7150,0,0.0,True,NO_ACTION,no nulls
+peer_percentiles,peer_group_name,7150,0,0.0,True,NO_ACTION,no nulls
+peer_percentiles,metric,7150,0,0.0,True,NO_ACTION,no nulls
+peer_percentiles,value,7150,574,8.03,True,KEEP_NULL,NULL is legitimate when source metric is missing or peer group insufficient; check peer_percentiles_diagnostic.csv for status SOURCE_MISSING/MAPPING_MISSING
+peer_percentiles,percentile_rank,7150,574,8.03,True,KEEP_NULL,NULL is legitimate when source metric is missing or peer group insufficient; check peer_percentiles_diagnostic.csv for status SOURCE_MISSING/MAPPING_MISSING
+peer_percentiles,year,7150,0,0.0,True,NO_ACTION,no nulls

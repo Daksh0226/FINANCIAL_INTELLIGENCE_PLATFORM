@@ -1,0 +1,8 @@
+company_id,broad_sector,metric,value,z_score,cluster
+INDIGO,Consumer Discretionary,return_on_equity_pct,856.9779643231899,3.472242393133005,4
+PNB,Financials,return_on_equity_pct,61.320565191187306,3.62598302595951,3
+ADANIGREEN,Energy,debt_to_equity,6.375756429652042,3.2856579250948235,3
+TATAMOTORS,Consumer Discretionary,free_cash_flow_cr,45133.0,3.22891444411325,1
+ADANIGREEN,Energy,distance_to_centroid,2.7811980759638875,,3
+CANBK,Financials,distance_to_centroid,3.517087694520767,,3
+PFC,Financials,distance_to_centroid,2.974152333623167,,3

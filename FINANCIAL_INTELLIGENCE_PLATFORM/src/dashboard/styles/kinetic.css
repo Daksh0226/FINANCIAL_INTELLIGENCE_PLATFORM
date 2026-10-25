@@ -1,0 +1,621 @@
+/* Financial Intelligence Platform — unified theme system */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  color-scheme: light dark;
+  --app-bg: var(--background-color, light-dark(#FFFFFF, #09090B));
+  --app-surface: var(--secondary-background-color, light-dark(#F8FAFC, #18181B));
+  --app-surface-2: var(--secondary-background-color, light-dark(#F1F5F9, #27272A));
+  --app-text: var(--text-color, light-dark(#111827, #F9FAFB));
+  --app-text-secondary: var(--text-color, light-dark(#374151, #D1D5DB));
+  --app-text-muted: var(--text-color, light-dark(#6B7280, #A1A1AA));
+  --app-border: light-dark(#D1D5DB, #3F3F46);
+  --app-accent: var(--primary-color, #DFE104);
+  --app-accent-text: #000000;
+  --app-accent-muted: light-dark(rgba(223,225,4,0.18), rgba(223,225,4,0.12));
+  --app-success: light-dark(#16A34A, #22C55E);
+  --app-warning: light-dark(#D97706, #F59E0B);
+  --app-danger: light-dark(#DC2626, #EF4444);
+  --app-radius: 0px;
+  --app-font-display: "Space Grotesk", "Inter", system-ui, -apple-system, sans-serif;
+  --app-font-body: "Inter", system-ui, sans-serif;
+  /* legacy aliases */
+  --kinetic-bg: var(--app-bg);
+  --kinetic-fg: var(--app-text);
+  --kinetic-muted: var(--app-surface-2);
+  --kinetic-muted-fg: var(--app-text-muted);
+  --kinetic-accent: var(--app-accent);
+  --kinetic-accent-fg: var(--app-accent-text);
+  --kinetic-border: var(--app-border);
+  --kinetic-radius: var(--app-radius);
+  --kinetic-font-display: var(--app-font-display);
+  --kinetic-font-body: var(--app-font-body);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --app-bg: #FFFFFF;
+    --app-surface: #F8FAFC;
+    --app-surface-2: #F1F5F9;
+    --app-text: #111827;
+    --app-text-secondary: #374151;
+    --app-text-muted: #6B7280;
+    --app-border: #D1D5DB;
+    --app-accent-muted: rgba(223,225,4,0.18);
+  }
+}
+
+/* System explicit data-theme attributes (if JS ever sets them) */
+html[data-theme="dark"], body[data-theme="dark"] {
+  --app-bg: #09090B;
+  --app-surface: #18181B;
+  --app-surface-2: #27272A;
+  --app-text: #F9FAFB;
+  --app-text-secondary: #D1D5DB;
+  --app-text-muted: #A1A1AA;
+  --app-border: #3F3F46;
+}
+html[data-theme="light"], body[data-theme="light"] {
+  --app-bg: #FFFFFF;
+  --app-surface: #F8FAFC;
+  --app-surface-2: #F1F5F9;
+  --app-text: #111827;
+  --app-text-secondary: #374151;
+  --app-text-muted: #6B7280;
+  --app-border: #D1D5DB;
+}
+
+::selection { background: var(--app-accent) !important; color: var(--app-accent-text) !important; }
+
+/* Global app containers — use Streamlit theme vars as primary, --app-* as fallback */
+[data-testid="stAppViewContainer"] {
+  background: var(--background-color, var(--app-bg)) !important;
+  color: var(--text-color, var(--app-text)) !important;
+  font-family: var(--app-font-body) !important;
+}
+[data-testid="stHeader"] {
+  background: var(--background-color, var(--app-bg)) !important;
+  border-bottom: 2px solid var(--app-border) !important;
+}
+[data-testid="stSidebar"] {
+  background: var(--secondary-background-color, var(--app-surface)) !important;
+  border-right: 2px solid var(--app-border) !important;
+}
+[data-testid="stSidebar"] h1, [data-testid="stSidebar"] h2, [data-testid="stSidebar"] h3 {
+  text-transform: uppercase !important; letter-spacing: -0.04em !important; font-weight: 700 !important; color: var(--app-text) !important;
+}
+[data-testid="stSidebar"] .stRadio label, [data-testid="stSidebar"] .stSelectbox label, [data-testid="stSidebar"] label {
+  text-transform: uppercase !important; font-size: 0.75rem !important; letter-spacing: 0.08em !important; color: var(--app-text-muted) !important; font-weight: 700 !important;
+}
+[data-testid="stSidebarNav"] { background: transparent !important; }
+[data-testid="stSidebarNav"] a { color: var(--app-text) !important; }
+[data-testid="stSidebarNav"] a:hover { background: var(--app-surface-2) !important; }
+
+/* Typography — scoped to app, not global h1/h2/h3 which would leak into native dialog */
+[data-testid="stAppViewContainer"] h1, [data-testid="stMarkdownContainer"] h1 {
+  font-family: var(--app-font-display) !important; font-weight: 700 !important; text-transform: uppercase !important;
+  letter-spacing: -0.05em !important; line-height: 0.9 !important; font-size: clamp(2.2rem, 6vw, 4.5rem) !important; color: var(--text-color, var(--app-text)) !important;
+}
+[data-testid="stAppViewContainer"] h2, [data-testid="stMarkdownContainer"] h2 {
+  font-family: var(--app-font-display) !important; font-weight: 700 !important; text-transform: uppercase !important;
+  letter-spacing: -0.04em !important; line-height: 0.95 !important; font-size: clamp(1.6rem, 4vw, 2.8rem) !important; color: var(--text-color, var(--app-text)) !important;
+}
+[data-testid="stAppViewContainer"] h3, [data-testid="stMarkdownContainer"] h3 {
+  font-family: var(--app-font-display) !important; font-weight: 700 !important; text-transform: uppercase !important;
+  letter-spacing: -0.03em !important; font-size: clamp(1.2rem, 3vw, 1.8rem) !important; color: var(--text-color, var(--app-text)) !important;
+}
+[data-testid="stMarkdownContainer"] p, [data-testid="stMarkdownContainer"] li { font-family: var(--app-font-body) !important; font-size: 1.02rem !important; line-height: 1.6 !important; color: var(--app-text-secondary) !important; }
+[data-testid="stMarkdownContainer"] strong { color: var(--app-text) !important; font-weight: 700 !important; }
+[data-testid="stMarkdownContainer"] a { color: var(--app-accent) !important; text-decoration: underline !important; text-decoration-thickness: 2px !important; text-underline-offset: 3px !important; }
+[data-testid="stMarkdownContainer"] a:hover { background: var(--app-accent) !important; color: var(--app-accent-text) !important; text-decoration: none !important; padding: 0 4px !important; }
+[data-testid="stCaptionContainer"] { font-family: var(--app-font-display) !important; text-transform: uppercase !important; letter-spacing: 0.06em !important; font-size: 0.72rem !important; color: var(--app-text-muted) !important; }
+
+/* Buttons — scoped to app, not global (avoids overriding native Deploy dialog) */
+[data-testid="stAppViewContainer"] .stButton > button, [data-testid="stSidebar"] .stButton > button,
+[data-testid="stAppViewContainer"] [data-testid="stBaseButton-primary"], [data-testid="stSidebar"] [data-testid="stBaseButton-primary"],
+[data-testid="stAppViewContainer"] [data-testid="stBaseButton-secondary"], [data-testid="stSidebar"] [data-testid="stBaseButton-secondary"],
+[data-testid="stAppViewContainer"] .stDownloadButton > button, [data-testid="stSidebar"] .stDownloadButton > button,
+[data-testid="stAppViewContainer"] .stLinkButton > a, [data-testid="stSidebar"] .stLinkButton > a {
+  font-family: var(--app-font-display) !important; font-weight: 700 !important; text-transform: uppercase !important; letter-spacing: -0.02em !important;
+  border-radius: 0px !important; border: 2px solid var(--app-border) !important; background: transparent !important; color: var(--text-color, var(--app-text)) !important;
+  height: 48px !important; padding: 0 20px !important; font-size: 0.88rem !important; transition: all 180ms ease !important;
+}
+/* Preset buttons in Screener sidebar — must show full text, no ellipsis, wrap, 3 per row */
+[data-testid="stSidebar"] .stButton > button {
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+  overflow-wrap: break-word !important;
+  word-break: normal !important;
+  line-height: 1.2 !important;
+  height: auto !important;
+  min-height: 48px !important;
+  padding: 10px 6px !important;
+  font-size: 0.72rem !important;
+  letter-spacing: 0.03em !important;
+}
+/* Dark mode preset buttons: dark bg, light text, visible gray border */
+html[data-theme="dark"] [data-testid="stSidebar"] .stButton > button,
+body[data-theme="dark"] [data-testid="stSidebar"] .stButton > button,
+[data-testid="stSidebar"][data-theme="dark"] .stButton > button {
+  background: var(--app-surface, #18181B) !important;
+  color: #F1F5F9 !important;
+  border-color: #6B7280 !important;
+}
+@media (prefers-color-scheme: dark) {
+  [data-testid="stSidebar"] .stButton > button {
+    background: #18181B !important;
+    color: #F1F5F9 !important;
+    border-color: #6B7280 !important;
+  }
+}
+[data-testid="stAppViewContainer"] .stButton > button:hover, [data-testid="stSidebar"] .stButton > button:hover,
+[data-testid="stAppViewContainer"] .stDownloadButton > button:hover, [data-testid="stSidebar"] .stDownloadButton > button:hover { background: var(--text-color, var(--app-text)) !important; color: var(--background-color, var(--app-bg)) !important; border-color: var(--text-color, var(--app-text)) !important; }
+[data-testid="stAppViewContainer"] .stButton > button[kind="primary"], [data-testid="stSidebar"] .stButton > button[kind="primary"],
+[data-testid="stAppViewContainer"] .stButton > button[data-testid*="primary"], [data-testid="stSidebar"] .stButton > button[data-testid*="primary"] { background: var(--app-accent) !important; color: var(--app-accent-text) !important; border-color: var(--app-accent) !important; }
+.stButton > button[kind="primary"]:hover { filter: brightness(1.05) !important; }
+div[data-testid="column"] .stButton { width: 100%; }
+
+/* Metric cards — FIXED: headings must wrap, no ellipsis, equal heights, 2-line support */
+[data-testid="stMetric"] {
+  background: var(--app-surface) !important; border: 2px solid var(--app-border) !important; border-radius: 0px !important; padding: 18px 16px 20px 16px !important; transition: all 200ms ease !important;
+  min-height: 148px !important;
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+  align-items: stretch !important;
+  gap: 10px !important;
+  overflow: visible !important;
+}
+[data-testid="stMetric"]:hover { background: var(--app-accent) !important; border-color: var(--app-accent) !important; }
+/* Hover text must reach the real text nodes. Streamlit nests the label/value text in
+   <p> inside [data-testid="stMarkdownContainer"], and those <p> carry their own
+   !important colour (--app-text-muted / --app-text-secondary) that outranks a plain
+   `:hover *` rule, so the old selector left the text grey on the lime hover fill.
+   The selectors below are only active while a metric card is hovered, and each one
+   outranks the non-hover rules it must beat. Hover fill/border are untouched. */
+[data-testid="stMetric"]:hover,
+[data-testid="stMetric"]:hover *,
+[data-testid="stMetric"]:hover label,
+[data-testid="stMetric"]:hover [data-testid="stMetricLabel"] > div,
+[data-testid="stMetric"]:hover [data-testid="stMetricLabel"] p,
+[data-testid="stMetric"]:hover [data-testid="stMetricValue"],
+[data-testid="stMetric"]:hover [data-testid="stMetricValue"] p,
+[data-testid="stMetric"]:hover [data-testid="stMetricDelta"],
+[data-testid="stMetric"]:hover [data-testid="stMetricDelta"] p { color: var(--app-accent-text) !important; -webkit-text-fill-color: var(--app-accent-text) !important; }
+[data-testid="stMetric"] label,
+[data-testid="stMetric"] [data-testid="stMetricLabel"] > div,
+[data-testid="stMetric"] [data-testid="stMetricLabel"] p {
+  font-family: var(--app-font-display) !important; text-transform: uppercase !important; font-size: 0.70rem !important; letter-spacing: 0.09em !important; color: var(--app-text-muted) !important; font-weight: 700 !important;
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+  overflow-wrap: break-word !important;
+  word-break: normal !important;
+  line-height: 1.25 !important;
+  min-height: 2.6em !important;
+  max-height: none !important;
+  display: block !important;
+  hyphens: none !important;
+}
+[data-testid="stMetric"] [data-testid="stMetricLabel"] {
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+  min-height: 2.6em !important;
+  display: block !important;
+}
+[data-testid="stMetricValue"] { font-family: var(--app-font-display) !important; font-weight: 700 !important; font-size: 1.7rem !important; letter-spacing: -0.03em !important; color: var(--app-text) !important; margin-top: 4px !important; line-height: 1.1 !important; }
+[data-testid="stMetricDelta"] { font-family: var(--app-font-body) !important; color: var(--app-text-muted) !important; }
+/* Ensure columns keep equal heights and 6-in-a-row on desktop */
+[data-testid="stMetric"] + div { overflow: visible !important; }
+div[data-testid="column"] { overflow: visible !important; }
+div[data-testid="column"] > div { height: 100% !important; }
+div[data-testid="stHorizontalBlock"] { align-items: stretch !important; gap: 14px !important; }
+
+/* Inputs — text, number, date, select, multiselect, textarea */
+[data-testid="stTextInput"] input, [data-testid="stNumberInput"] input, [data-testid="stDateInput"] input, [data-testid="stTimeInput"] input, [data-testid="stTextArea"] textarea {
+  border-radius: 0px !important; border: 2px solid var(--app-border) !important; background: var(--app-surface) !important; color: var(--app-text) !important;
+  font-family: var(--app-font-body) !important; font-size: 0.95rem !important;
+}
+[data-testid="stTextInput"] input:focus, [data-testid="stNumberInput"] input:focus, [data-testid="stDateInput"] input:focus, [data-testid="stTextArea"] textarea:focus {
+  border-color: var(--app-accent) !important; box-shadow: 0 0 0 2px var(--app-accent-muted) !important;
+}
+[data-testid="stSelectbox"] > div > div, [data-testid="stMultiSelect"] > div > div, [data-testid="stNumberInput"] > div > div {
+  border-radius: 0px !important; border: 2px solid var(--app-border) !important; background: var(--app-surface) !important; color: var(--app-text) !important;
+}
+[data-testid="stSelectbox"] > div > div:focus-within, [data-testid="stMultiSelect"] > div > div:focus-within { border-color: var(--app-accent) !important; box-shadow: 0 0 0 2px var(--app-accent-muted) !important; }
+/* Select dropdown menu — scoped to app selects only, not global popover/menu to avoid overriding deployment dialog */
+[data-testid="stSelectbox"] [data-baseweb="popover"], [data-testid="stMultiSelect"] [data-baseweb="popover"],
+[data-baseweb="select"] ul, div[role="listbox"] {
+  background: var(--app-surface) !important; color: var(--app-text) !important; border: 2px solid var(--app-border) !important; border-radius: 0px !important;
+}
+[data-baseweb="option"], [data-baseweb="menu"] li, div[role="option"] {
+  color: var(--app-text) !important; background: transparent !important; font-family: var(--app-font-body) !important;
+}
+[data-baseweb="option"]:hover, div[role="option"]:hover, [data-baseweb="option"][aria-selected="true"] {
+  background: var(--app-accent) !important; color: var(--app-accent-text) !important;
+}
+[data-baseweb="tag"] { background: var(--app-surface-2) !important; color: var(--app-text) !important; border: 1px solid var(--app-border) !important; border-radius: 0px !important; }
+/* Slider — Compact financial-dashboard style (ONE track, no yellow block) */
+[data-testid="stSlider"] { color: var(--app-text) !important; background: transparent !important; margin-bottom: 18px !important; }
+[data-testid="stSlider"] label {
+  color: #E5E7EB !important;
+  font-family: var(--app-font-display) !important;
+  text-transform: uppercase !important;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.02em !important;
+  margin-bottom: 6px !important;
+  line-height: 1.2 !important;
+  white-space: normal !important;
+}
+@media (prefers-color-scheme: light) {
+  [data-testid="stSlider"] label { color: #1E293B !important; }
+}
+html[data-theme="light"] [data-testid="stSlider"] label,
+body[data-theme="light"] [data-testid="stSlider"] label { color: #1E293B !important; }
+html[data-theme="dark"] [data-testid="stSlider"] label,
+body[data-theme="dark"] [data-testid="stSlider"] label { color: #E5E7EB !important; }
+
+/* Slider container — transparent, compact spacing */
+[data-testid="stSlider"] > div { background: transparent !important; gap: 4px !important; }
+[data-testid="stSlider"] > div > div { gap: 4px !important; }
+
+/* INACTIVE TRACK — single track only */
+[data-testid="stSlider"] > div > div > div {
+  background: #3F444F !important;
+  height: 5px !important;
+  border-radius: 999px !important;
+  opacity: 1 !important;
+}
+@media (prefers-color-scheme: light) {
+  [data-testid="stSlider"] > div > div > div { background: #CBD5E1 !important; }
+}
+html[data-theme="light"] [data-testid="stSlider"] > div > div > div,
+body[data-theme="light"] [data-testid="stSlider"] > div > div > div { background: #CBD5E1 !important; }
+html[data-theme="dark"] [data-testid="stSlider"] > div > div > div,
+body[data-theme="dark"] [data-testid="stSlider"] > div > div > div { background: #3F444F !important; }
+
+/* ACTIVE/FILLED TRACK — continuous blue, no duplicate track */
+[data-testid="stSlider"] > div > div > div > div {
+  background: #38BDF8 !important;
+  height: 5px !important;
+  border-radius: 999px !important;
+  opacity: 1 !important;
+}
+@media (prefers-color-scheme: light) {
+  [data-testid="stSlider"] > div > div > div > div { background: #2563EB !important; }
+}
+html[data-theme="light"] [data-testid="stSlider"] > div > div > div > div,
+body[data-theme="light"] [data-testid="stSlider"] > div > div > div > div { background: #2563EB !important; }
+html[data-theme="dark"] [data-testid="stSlider"] > div > div > div > div,
+body[data-theme="dark"] [data-testid="stSlider"] > div > div > div > div { background: #38BDF8 !important; }
+
+/* THUMB — small circle white with blue border */
+[data-testid="stSlider"] [role="slider"] {
+  background: #FFFFFF !important;
+  border: 2px solid #38BDF8 !important;
+  width: 14px !important;
+  height: 14px !important;
+  border-radius: 50% !important;
+  box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.15) !important;
+  opacity: 1 !important;
+  display: block !important;
+  visibility: visible !important;
+}
+[data-testid="stSlider"] [role="slider"]:hover {
+  background: #E0F2FE !important;
+  border-color: #0EA5E9 !important;
+}
+@media (prefers-color-scheme: light) {
+  [data-testid="stSlider"] [role="slider"] { border-color: #2563EB !important; }
+  [data-testid="stSlider"] [role="slider"]:hover { border-color: #1D4ED8 !important; background: #EFF6FF !important; }
+}
+html[data-theme="light"] [data-testid="stSlider"] [role="slider"],
+body[data-theme="light"] [data-testid="stSlider"] [role="slider"] { border-color: #2563EB !important; background: #FFFFFF !important; }
+html[data-theme="dark"] [data-testid="stSlider"] [role="slider"],
+body[data-theme="dark"] [data-testid="stSlider"] [role="slider"] { border-color: #38BDF8 !important; background: #FFFFFF !important; }
+
+/* VALUE DISPLAY — compact badge above thumb */
+[data-testid="stSlider"] [data-testid="stThumbValue"],
+[data-testid="stSlider"] div[data-testid="stThumbValue"] {
+  background: #1E293B !important;
+  background-color: #1E293B !important;
+  color: #F8FAFC !important;
+  -webkit-text-fill-color: #F8FAFC !important;
+  font-weight: 600 !important;
+  font-size: 13px !important;
+  border: 1px solid #38BDF8 !important;
+  border-radius: 5px !important;
+  padding: 3px 7px !important;
+  opacity: 1 !important;
+  display: inline-flex !important;
+  visibility: visible !important;
+  width: auto !important;
+  line-height: 1 !important;
+  margin-bottom: 4px !important;
+}
+[data-testid="stSlider"] [data-testid="stThumbValue"] span,
+[data-testid="stSlider"] div[data-testid="stThumbValue"] span {
+  color: #F8FAFC !important;
+  -webkit-text-fill-color: #F8FAFC !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+@media (prefers-color-scheme: light) {
+  [data-testid="stSlider"] [data-testid="stThumbValue"],
+  [data-testid="stSlider"] div[data-testid="stThumbValue"] {
+    background: #EFF6FF !important;
+    background-color: #EFF6FF !important;
+    color: #0F172A !important;
+    -webkit-text-fill-color: #0F172A !important;
+    border-color: #2563EB !important;
+  }
+  [data-testid="stSlider"] [data-testid="stThumbValue"] span,
+  [data-testid="stSlider"] div[data-testid="stThumbValue"] span {
+    color: #0F172A !important;
+    -webkit-text-fill-color: #0F172A !important;
+  }
+}
+html[data-theme="light"] [data-testid="stSlider"] [data-testid="stThumbValue"],
+body[data-theme="light"] [data-testid="stSlider"] [data-testid="stThumbValue"] {
+  background: #EFF6FF !important;
+  background-color: #EFF6FF !important;
+  color: #0F172A !important;
+  -webkit-text-fill-color: #0F172A !important;
+  border-color: #2563EB !important;
+}
+html[data-theme="dark"] [data-testid="stSlider"] [data-testid="stThumbValue"],
+body[data-theme="dark"] [data-testid="stSlider"] [data-testid="stThumbValue"] {
+  background: #1E293B !important;
+  background-color: #1E293B !important;
+  color: #F8FAFC !important;
+  -webkit-text-fill-color: #F8FAFC !important;
+  border-color: #38BDF8 !important;
+}
+
+/* MIN/MAX values below SAME track — transparent bg */
+[data-testid="stSlider"] [data-testid="stTickBarMin"],
+[data-testid="stSlider"] [data-testid="stTickBarMax"] {
+  background: transparent !important;
+  background-color: transparent !important;
+  color: #94A3B8 !important;
+  -webkit-text-fill-color: #94A3B8 !important;
+  border: none !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important;
+  font-weight: 400 !important;
+  font-size: 12px !important;
+  padding: 0 !important;
+  margin-top: 4px !important;
+}
+[data-testid="stSlider"] [data-testid="stTickBarMin"] span,
+[data-testid="stSlider"] [data-testid="stTickBarMax"] span {
+  color: #94A3B8 !important;
+  -webkit-text-fill-color: #94A3B8 !important;
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+[data-testid="stSlider"] [data-testid="stTickBarMin"] { text-align: left !important; justify-content: flex-start !important; }
+[data-testid="stSlider"] [data-testid="stTickBarMax"] { text-align: right !important; justify-content: flex-end !important; }
+@media (prefers-color-scheme: light) {
+  [data-testid="stSlider"] [data-testid="stTickBarMin"],
+  [data-testid="stSlider"] [data-testid="stTickBarMax"] {
+    color: #64748B !important;
+    -webkit-text-fill-color: #64748B !important;
+  }
+  [data-testid="stSlider"] [data-testid="stTickBarMin"] span,
+  [data-testid="stSlider"] [data-testid="stTickBarMax"] span {
+    color: #64748B !important;
+    -webkit-text-fill-color: #64748B !important;
+  }
+}
+html[data-theme="light"] [data-testid="stSlider"] [data-testid="stTickBarMin"],
+body[data-theme="light"] [data-testid="stSlider"] [data-testid="stTickBarMin"],
+html[data-theme="light"] [data-testid="stSlider"] [data-testid="stTickBarMax"],
+body[data-theme="light"] [data-testid="stSlider"] [data-testid="stTickBarMax"] {
+  color: #64748B !important;
+  -webkit-text-fill-color: #64748B !important;
+}
+html[data-theme="dark"] [data-testid="stSlider"] [data-testid="stTickBarMin"],
+body[data-theme="dark"] [data-testid="stSlider"] [data-testid="stTickBarMax"] {
+  color: #94A3B8 !important;
+  -webkit-text-fill-color: #94A3B8 !important;
+}
+
+/* Ensure slider elements are visible — override any hidden */
+[data-testid="stSlider"] [role="slider"],
+[data-testid="stSlider"] [data-testid="stThumbValue"],
+[data-testid="stSlider"] [data-testid="stTickBarMin"],
+[data-testid="stSlider"] [data-testid="stTickBarMax"] {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+[data-testid="stSlider"] > div,
+[data-testid="stSlider"] > div > div {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Compact spacing between sliders */
+[data-testid="stSlider"] { margin-bottom: 18px !important; }
+[data-testid="stSidebar"] [data-testid="stSlider"] { margin-bottom: 18px !important; }
+
+
+/* Radio & Checkbox */
+
+[data-testid="stRadio"] label, [data-testid="stCheckbox"] label, [data-testid="stToggle"] label { color: var(--app-text) !important; font-family: var(--app-font-body) !important; }
+[data-testid="stRadio"] div[role="radiogroup"] label { color: var(--app-text) !important; }
+input[type="radio"], input[type="checkbox"] { accent-color: var(--app-accent) !important; }
+[data-testid="stCheckbox"] > label > div { border-color: var(--app-border) !important; }
+[data-testid="stRadio"] label p, [data-testid="stCheckbox"] label p { color: var(--app-text) !important; }
+
+/* Dataframes & tables */
+[data-testid="stDataFrame"], [data-testid="stTable"], [data-testid="stDataEditor"] {
+  border: 2px solid var(--app-border) !important; border-radius: 0px !important; overflow: hidden !important; background: var(--app-surface) !important;
+}
+[data-testid="stDataFrame"] thead tr th, [data-testid="stTable"] thead tr th {
+  background: var(--app-surface-2) !important; color: var(--app-text) !important; font-family: var(--app-font-display) !important;
+  text-transform: uppercase !important; font-size: 0.7rem !important; letter-spacing: 0.07em !important; border-bottom: 2px solid var(--app-border) !important; font-weight: 700 !important;
+}
+[data-testid="stDataFrame"] tbody tr, [data-testid="stTable"] tbody tr { background: var(--app-surface) !important; }
+[data-testid="stDataFrame"] tbody td, [data-testid="stTable"] tbody td { color: var(--app-text) !important; border-bottom: 1px solid var(--app-border) !important; }
+[data-testid="stDataFrame"] tbody tr:hover { background: var(--app-accent-muted) !important; }
+
+/* ── Dark-mode table selection fix — replaces pale yellow #fff3cd/white unreadable bug ──
+   Targets Streamlit's Glide Data Grid selection + any pandas Styler highlighted row.
+   Ensures MARUTI and all selected/benchmark rows are white-on-dark-blue, WCAG AA contrast >8:1.
+   Normal rows keep var(--app-surface) #18181B; only selected/active get #1E3A5F. */
+[data-testid="stDataFrame"] [aria-selected="true"],
+[data-testid="stDataEditor"] [aria-selected="true"],
+[data-testid="stDataFrame"] td[aria-selected="true"],
+[data-testid="stDataEditor"] td[aria-selected="true"],
+[data-testid="stDataFrame"] th[aria-selected="true"],
+[data-testid="stDataFrame"] tr[aria-selected="true"],
+[data-testid="stDataFrame"] tr:has(td[aria-selected="true"]),
+[data-testid="stDataFrame"] .is-selected,
+[data-testid="stDataEditor"] .is-selected {
+  background-color: #1E3A5F !important;
+  color: #F8FAFC !important;
+  border-color: #2A5A8A !important;
+}
+/* Glide Data Grid internal canvas selection — dark blue fill, white text */
+[data-testid="stDataFrame"] canvas { outline: none !important; }
+.glide-data-grid, [data-testid="stDataFrame"] div[data-testid="glideDataEditor"] {
+  --gdg-accent-color: #1E3A5F !important;
+  --gdg-accent-light: rgba(30, 58, 95, 0.18) !important;
+  --gdg-selection-color: #F8FAFC !important;
+}
+/* Pandas Styler inline style override — ensure any #fff3cd highlight is forced to dark blue in dark mode */
+[data-testid="stDataFrame"] td[style*="fff3cd"],
+[data-testid="stDataFrame"] td[style*="FFF3CD"],
+[data-testid="stDataFrame"] td[style*="ffffe0"],
+[data-testid="stDataFrame"] tr[style*="fff3cd"] td {
+  background-color: #1E3A5F !important;
+  color: #F8FAFC !important;
+  border: 1px solid #2A5A8A !important;
+}
+/* Ensure our new dark-blue Styler highlight (MARUTI etc.) is never overridden by generic dark-row rules */
+[data-testid="stDataFrame"] td[style*="1E3A5F"],
+[data-testid="stDataFrame"] td[style*="1e3a5f"],
+[data-testid="stDataFrame"] td[style*="173F5F"],
+[data-testid="stDataFrame"] td[style*="173f5f"],
+[data-testid="stDataFrame"] tr[style*="1E3A5F"] td {
+  background-color: #1E3A5F !important;
+  color: #F8FAFC !important;
+  border: 1px solid #2A5A8A !important;
+}
+/* Hover on selected row stays dark-blue (not accent-muted) */
+[data-testid="stDataFrame"] tbody tr:has(td[aria-selected="true"]):hover,
+[data-testid="stDataFrame"] tr[aria-selected="true"]:hover,
+[data-testid="stDataFrame"] td[aria-selected="true"]:hover {
+  background-color: #1A3355 !important;
+  color: #F8FAFC !important;
+}
+/* Keyboard focus ring for selected cell — teal accent, visible on dark blue */
+[data-testid="stDataFrame"] td:focus-visible,
+[data-testid="stDataEditor"] td:focus-visible {
+  outline: 2px solid #14B8A6 !important;
+  outline-offset: -2px !important;
+}
+/* Active (mouse-down) state */
+[data-testid="stDataFrame"] td:active,
+[data-testid="stDataFrame"] tr:active td {
+  background-color: #173F5F !important;
+  color: #F8FAFC !important;
+}
+
+/* Plotly — transparent bg lets app bg show; text follows var(--app-text) via CSS for native System/Light/Dark */
+.js-plotly-plot { border: 2px solid var(--app-border) !important; border-radius: 0px !important; background: var(--app-bg) !important; }
+.js-plotly-plot .plotly { background: transparent !important; }
+.js-plotly-plot .plotly text, .js-plotly-plot .gtitle, .js-plotly-plot .xtick text, .js-plotly-plot .ytick text, .js-plotly-plot .legend text { fill: var(--app-text) !important; color: var(--app-text) !important; }
+
+/* Alerts — info/success/warning/error */
+[data-testid="stAlert"], .stAlert {
+  border-radius: 0px !important; border: 2px solid var(--app-border) !important; background: var(--app-surface) !important; color: var(--app-text) !important; font-family: var(--app-font-body) !important;
+}
+[data-testid="stAlert"] p, .stAlert p { color: var(--app-text) !important; }
+[kind="info"], [data-testid="stInfo"] { border-color: #3B82F6 !important; background: rgba(59,130,246,0.08) !important; }
+[data-testid="stSuccess"], [kind="success"] { border-color: var(--app-success) !important; background: rgba(34,197,94,0.08) !important; }
+[data-testid="stWarning"], [kind="warning"] { border-color: var(--app-warning) !important; background: rgba(245,158,11,0.08) !important; }
+[data-testid="stError"], [kind="error"] { border-color: var(--app-danger) !important; background: rgba(239,68,68,0.08) !important; }
+
+/* Tabs */
+[data-testid="stTabs"] [data-baseweb="tab-list"] { gap: 0px !important; border-bottom: 2px solid var(--app-border) !important; background: transparent !important; }
+[data-testid="stTabs"] button { font-family: var(--app-font-display) !important; text-transform: uppercase !important; font-weight: 700 !important; letter-spacing: -0.02em !important; border-radius: 0px !important; border: none !important; border-bottom: 3px solid transparent !important; color: var(--app-text-muted) !important; background: transparent !important; }
+[data-testid="stTabs"] button[aria-selected="true"] { border-bottom-color: var(--app-accent) !important; color: var(--app-accent) !important; background: var(--app-surface) !important; }
+[data-testid="stTabs"] [data-baseweb="tab-panel"] { background: transparent !important; color: var(--app-text) !important; }
+
+/* Expander */
+[data-testid="stExpander"] { border: 2px solid var(--app-border) !important; border-radius: 0px !important; background: var(--app-surface) !important; }
+[data-testid="stExpander"] summary, [data-testid="stExpander"] details > summary { font-family: var(--app-font-display) !important; text-transform: uppercase !important; font-weight: 700 !important; color: var(--app-text) !important; }
+[data-testid="stExpander"] [data-testid="stMarkdownContainer"] { color: var(--app-text) !important; }
+
+/* Divider — scoped to app */
+[data-testid="stAppViewContainer"] hr, [data-testid="stSidebar"] hr { border: none !important; border-top: 2px solid var(--app-border) !important; margin: 24px 0 !important; }
+
+/* Massive numbers */
+.kinetic-massive { font-family: var(--app-font-display) !important; font-weight: 700 !important; font-size: clamp(3.5rem, 9vw, 8rem) !important; line-height: 0.8 !important; letter-spacing: -0.06em !important; color: var(--app-surface-2) !important; text-transform: uppercase !important; user-select: none; }
+.kinetic-massive--accent { color: var(--app-accent) !important; }
+
+/* Marquee */
+.kinetic-marquee {
+  overflow: hidden; white-space: nowrap; background: var(--app-accent); color: var(--app-accent-text);
+  border-top: 2px solid var(--app-accent); border-bottom: 2px solid var(--app-accent);
+  padding: 12px 0; font-family: var(--app-font-display); font-weight: 700; text-transform: uppercase; letter-spacing: -0.02em; font-size: clamp(1rem, 2.2vw, 1.4rem); line-height: 1;
+}
+.kinetic-marquee--muted { background: var(--app-surface) !important; color: var(--app-text) !important; border-color: var(--app-border) !important; }
+.kinetic-marquee__track { display: inline-flex; animation: kinetic-marquee 28s linear infinite; will-change: transform; }
+.kinetic-marquee__track--reverse { animation-direction: reverse; }
+.kinetic-marquee__track--fast { animation-duration: 18s; }
+.kinetic-marquee__item { display: inline-flex; align-items: center; gap: 1.2rem; padding: 0 1.6rem; flex-shrink: 0; }
+.kinetic-marquee__dot { width: 8px; height: 8px; background: currentColor; border-radius: 0; flex-shrink: 0; }
+@keyframes kinetic-marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) { .kinetic-marquee__track { animation: none !important; } }
+
+/* Hero */
+.kinetic-hero { font-family: var(--app-font-display); font-weight: 700; text-transform: uppercase; letter-spacing: -0.06em; line-height: 0.82; font-size: clamp(2.8rem, 9vw, 10rem); color: var(--app-text); margin: 0; }
+.kinetic-hero__accent { color: var(--app-accent); display: inline-block; }
+.kinetic-kicker { font-family: var(--app-font-display); text-transform: uppercase; letter-spacing: 0.16em; font-size: 0.7rem; color: var(--app-text-muted); font-weight: 700; margin-bottom: 10px; }
+
+/* Cards */
+.kinetic-card { border: 2px solid var(--app-border); background: var(--app-surface); padding: 28px; border-radius: 0px; transition: all 200ms ease; position: relative; }
+.kinetic-card:hover { background: var(--app-accent); border-color: var(--app-accent); }
+.kinetic-card:hover * { color: var(--app-accent-text) !important; }
+.kinetic-card__title { font-family: var(--app-font-display); font-weight: 700; text-transform: uppercase; letter-spacing: -0.03em; font-size: clamp(1.2rem, 2.5vw, 1.6rem); line-height: 0.9; color: var(--app-text); }
+.kinetic-card__desc { color: var(--app-text-muted); font-size: 1rem; line-height: 1.5; margin-top: 10px; }
+.kinetic-pill { display: inline-flex; align-items: center; gap: 6px; border: 2px solid var(--app-border); padding: 6px 12px; font-family: var(--app-font-display); font-weight: 700; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.04em; border-radius: 0px; background: var(--app-surface); color: var(--app-text); }
+.kinetic-pill--pro { border-color: var(--app-success); color: var(--app-success); }
+.kinetic-pill--con { border-color: var(--app-danger); color: var(--app-danger); }
+.kinetic-grid { display: grid; gap: 1px; background: var(--app-border); border: 2px solid var(--app-border); }
+.kinetic-grid > * { background: var(--app-bg); }
+
+/* Scrollbar + focus */
+::-webkit-scrollbar { width: 8px; height: 8px; } ::-webkit-scrollbar-track { background: var(--app-bg); } ::-webkit-scrollbar-thumb { background: var(--app-border); border-radius: 0px; } ::-webkit-scrollbar-thumb:hover { background: var(--app-text-muted); }
+*:focus-visible { outline: 2px solid var(--app-accent) !important; outline-offset: 2px !important; }
+
+/* Ensure tooltips/popovers readable */
+[data-baseweb="tooltip"] { background: var(--app-surface-2) !important; color: var(--app-text) !important; border: 1px solid var(--app-border) !important; border-radius: 0px !important; }
+
+/* File uploader, progress, spinner */
+[data-testid="stFileUploader"] { background: var(--app-surface) !important; border: 2px dashed var(--app-border) !important; border-radius: 0px !important; }
+[data-testid="stProgress"] > div > div { background: var(--app-accent) !important; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  h1, [data-testid="stMarkdownContainer"] h1 { font-size: clamp(1.8rem, 9vw, 2.8rem) !important; }
+  [data-testid="stMetricValue"] { font-size: 1.4rem !important; }
+  .kinetic-hero { font-size: clamp(2.2rem, 12vw, 4.5rem) !important; }
+  .kinetic-marquee { font-size: 0.95rem !important; padding: 10px 0 !important; }
+}
+
+/* Fix Streamlit's auto-generated light/dark inline styles — let CSS variables win */
+[data-testid="stAppViewContainer"][style] { background: var(--app-bg) !important; color: var(--app-text) !important; }

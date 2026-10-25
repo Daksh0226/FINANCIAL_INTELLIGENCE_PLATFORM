@@ -1,0 +1,330 @@
+rule_id,company_id,field,issue,severity
+DQ-05,ADANIENSOL,opm_percentage,OPM mismatch computed 34.4 vs 30.0 year 2024,WARNING
+DQ-05,AXISBANK,opm_percentage,OPM mismatch computed 30.6 vs 1353.0 year 2013,WARNING
+DQ-05,AXISBANK,opm_percentage,OPM mismatch computed 31.5 vs 2307.0 year 2014,WARNING
+DQ-05,AXISBANK,opm_percentage,OPM mismatch computed 31.4 vs 3097.0 year 2015,WARNING
+DQ-05,AXISBANK,opm_percentage,OPM mismatch computed 32.6 vs 3466.0 year 2016,WARNING
+DQ-05,AXISBANK,opm_percentage,OPM mismatch computed 53.5 vs -5715.0 year 2017,WARNING
+DQ-05,AXISBANK,opm_percentage,OPM mismatch computed 63.1 vs -10277.0 year 2018,WARNING
+DQ-05,AXISBANK,opm_percentage,OPM mismatch computed 49.4 vs -5447.0 year 2019,WARNING
+DQ-05,AXISBANK,opm_percentage,OPM mismatch computed 56.0 vs -9859.0 year 2020,WARNING
+DQ-05,AXISBANK,opm_percentage,OPM mismatch computed 50.1 vs -2510.0 year 2021,WARNING
+DQ-05,AXISBANK,opm_percentage,OPM mismatch computed 44.5 vs 3170.0 year 2022,WARNING
+DQ-05,AXISBANK,opm_percentage,OPM mismatch computed 34.2 vs 13857.0 year 2023,WARNING
+DQ-05,AXISBANK,opm_percentage,OPM mismatch computed 34.7 vs 11952.0 year 2024,WARNING
+DQ-05,AXISBANK,opm_percentage,OPM mismatch computed 36.9 vs 9061.0 year TTM,WARNING
+DQ-05,BAJFINANCE,opm_percentage,OPM mismatch computed 32.5 vs 1367.0 year 2015,WARNING
+DQ-05,BAJFINANCE,opm_percentage,OPM mismatch computed 32.3 vs 1986.0 year 2016,WARNING
+DQ-05,BAJFINANCE,opm_percentage,OPM mismatch computed 32.6 vs 2867.0 year 2017,WARNING
+DQ-05,BAJFINANCE,opm_percentage,OPM mismatch computed 32.3 vs 3935.0 year 2018,WARNING
+DQ-05,BAJFINANCE,opm_percentage,OPM mismatch computed 29.5 vs 6310.0 year 2019,WARNING
+DQ-05,BAJFINANCE,opm_percentage,OPM mismatch computed 34.7 vs 7608.0 year 2020,WARNING
+DQ-05,BAJFINANCE,opm_percentage,OPM mismatch computed 40.6 vs 6314.0 year 2021,WARNING
+DQ-05,BAJFINANCE,opm_percentage,OPM mismatch computed 37.5 vs 9906.0 year 2022,WARNING
+DQ-05,BAJFINANCE,opm_percentage,OPM mismatch computed 30.7 vs 16018.0 year 2023,WARNING
+DQ-05,BAJFINANCE,opm_percentage,OPM mismatch computed 29.3 vs 19987.0 year 2024,WARNING
+DQ-05,BAJFINANCE,opm_percentage,OPM mismatch computed 30.4 vs 21417.0 year TTM,WARNING
+DQ-05,BANKBARODA,opm_percentage,OPM mismatch computed 30.0 vs 1006.0 year 2013,WARNING
+DQ-05,BANKBARODA,opm_percentage,OPM mismatch computed 29.8 vs 809.0 year 2014,WARNING
+DQ-05,BANKBARODA,opm_percentage,OPM mismatch computed 30.0 vs 902.0 year 2015,WARNING
+DQ-05,BANKBARODA,opm_percentage,OPM mismatch computed 55.4 vs -11700.0 year 2016,WARNING
+DQ-05,BANKBARODA,opm_percentage,OPM mismatch computed 43.3 vs -4372.0 year 2017,WARNING
+DQ-05,BANKBARODA,opm_percentage,OPM mismatch computed 56.7 vs -9197.0 year 2018,WARNING
+DQ-05,BANKBARODA,opm_percentage,OPM mismatch computed 48.8 vs -5414.0 year 2019,WARNING
+DQ-05,BANKBARODA,opm_percentage,OPM mismatch computed 51.4 vs -11728.0 year 2020,WARNING
+DQ-05,BANKBARODA,opm_percentage,OPM mismatch computed 51.2 vs -6957.0 year 2021,WARNING
+DQ-05,BANKBARODA,opm_percentage,OPM mismatch computed 51.1 vs -2948.0 year 2022,WARNING
+DQ-05,BANKBARODA,opm_percentage,OPM mismatch computed 40.5 vs 6329.0 year 2023,WARNING
+DQ-05,BANKBARODA,opm_percentage,OPM mismatch computed 37.5 vs 4102.0 year 2024,WARNING
+DQ-05,BANKBARODA,opm_percentage,OPM mismatch computed 37.4 vs 3526.0 year TTM,WARNING
+DQ-05,CANBK,opm_percentage,OPM mismatch computed 21.2 vs 655.0 year 2013,WARNING
+DQ-05,CANBK,opm_percentage,OPM mismatch computed 24.4 vs -672.0 year 2014,WARNING
+DQ-05,CANBK,opm_percentage,OPM mismatch computed 23.5 vs -621.0 year 2015,WARNING
+DQ-05,CANBK,opm_percentage,OPM mismatch computed 40.4 vs -8008.0 year 2016,WARNING
+DQ-05,CANBK,opm_percentage,OPM mismatch computed 37.8 vs -5775.0 year 2017,WARNING
+DQ-05,CANBK,opm_percentage,OPM mismatch computed 61.9 vs -13350.0 year 2018,WARNING
+DQ-05,CANBK,opm_percentage,OPM mismatch computed 56.7 vs -11590.0 year 2019,WARNING
+DQ-05,CANBK,opm_percentage,OPM mismatch computed 53.9 vs -12867.0 year 2020,WARNING
+DQ-05,CANBK,opm_percentage,OPM mismatch computed 61.8 vs -18367.0 year 2021,WARNING
+DQ-05,CANBK,opm_percentage,OPM mismatch computed 58.4 vs -13657.0 year 2022,WARNING
+DQ-05,CANBK,opm_percentage,OPM mismatch computed 49.8 vs -9877.0 year 2023,WARNING
+DQ-05,CANBK,opm_percentage,OPM mismatch computed 41.8 vs -7745.0 year 2024,WARNING
+DQ-05,CANBK,opm_percentage,OPM mismatch computed 40.2 vs -8985.0 year TTM,WARNING
+DQ-05,CHOLAFIN,opm_percentage,OPM mismatch computed 26.8 vs 472.0 year 2013,WARNING
+DQ-05,CHOLAFIN,opm_percentage,OPM mismatch computed 28.4 vs 578.0 year 2014,WARNING
+DQ-05,CHOLAFIN,opm_percentage,OPM mismatch computed 28.6 vs 696.0 year 2015,WARNING
+DQ-05,CHOLAFIN,opm_percentage,OPM mismatch computed 30.0 vs 899.0 year 2016,WARNING
+DQ-05,CHOLAFIN,opm_percentage,OPM mismatch computed 28.2 vs 1143.0 year 2017,WARNING
+DQ-05,CHOLAFIN,opm_percentage,OPM mismatch computed 26.1 vs 1451.0 year 2018,WARNING
+DQ-05,CHOLAFIN,opm_percentage,OPM mismatch computed 23.0 vs 1888.0 year 2019,WARNING
+DQ-05,CHOLAFIN,opm_percentage,OPM mismatch computed 27.8 vs 1699.0 year 2020,WARNING
+DQ-05,CHOLAFIN,opm_percentage,OPM mismatch computed 30.4 vs 2094.0 year 2021,WARNING
+DQ-05,CHOLAFIN,opm_percentage,OPM mismatch computed 28.8 vs 2924.0 year 2022,WARNING
+DQ-05,CHOLAFIN,opm_percentage,OPM mismatch computed 28.1 vs 3515.0 year 2023,WARNING
+DQ-05,CHOLAFIN,opm_percentage,OPM mismatch computed 28.1 vs 4548.0 year 2024,WARNING
+DQ-05,CHOLAFIN,opm_percentage,OPM mismatch computed 28.7 vs 5175.0 year TTM,WARNING
+DQ-05,CIPLA,opm_percentage,OPM mismatch computed 73.3 vs 2214.0 year 2013,WARNING
+DQ-05,CIPLA,opm_percentage,OPM mismatch computed 78.9 vs 2147.0 year 2014,WARNING
+DQ-05,CIPLA,opm_percentage,OPM mismatch computed 80.9 vs 2163.0 year 2015,WARNING
+DQ-05,CIPLA,opm_percentage,OPM mismatch computed 82.0 vs 2480.0 year 2016,WARNING
+DQ-05,CIPLA,opm_percentage,OPM mismatch computed 82.7 vs 2496.0 year 2017,WARNING
+DQ-05,CIPLA,opm_percentage,OPM mismatch computed 81.3 vs 2826.0 year 2018,WARNING
+DQ-05,CIPLA,opm_percentage,OPM mismatch computed 81.1 vs 3097.0 year 2019,WARNING
+DQ-05,CIPLA,opm_percentage,OPM mismatch computed 81.3 vs 3206.0 year 2020,WARNING
+DQ-05,CIPLA,opm_percentage,OPM mismatch computed 77.8 vs 4252.0 year 2021,WARNING
+DQ-05,CIPLA,opm_percentage,OPM mismatch computed 79.1 vs 4553.0 year 2022,WARNING
+DQ-05,CIPLA,opm_percentage,OPM mismatch computed 77.9 vs 5027.0 year 2023,WARNING
+DQ-05,CIPLA,opm_percentage,OPM mismatch computed 75.6 vs 6291.0 year 2024,WARNING
+DQ-05,CIPLA,opm_percentage,OPM mismatch computed 74.4 vs 6906.0 year TTM,WARNING
+DQ-05,COALINDIA,opm_percentage,OPM mismatch computed 73.5 vs 18087.0 year 2013,WARNING
+DQ-05,COALINDIA,opm_percentage,OPM mismatch computed 74.8 vs 17766.0 year 2014,WARNING
+DQ-05,COALINDIA,opm_percentage,OPM mismatch computed 76.6 vs 17343.0 year 2015,WARNING
+DQ-05,COALINDIA,opm_percentage,OPM mismatch computed 76.0 vs 18714.0 year 2016,WARNING
+DQ-05,COALINDIA,opm_percentage,OPM mismatch computed 84.1 vs 12448.0 year 2017,WARNING
+DQ-05,COALINDIA,opm_percentage,OPM mismatch computed 89.1 vs 9288.0 year 2018,WARNING
+DQ-05,COALINDIA,opm_percentage,OPM mismatch computed 74.9 vs 25007.0 year 2019,WARNING
+DQ-05,COALINDIA,opm_percentage,OPM mismatch computed 77.5 vs 21581.0 year 2020,WARNING
+DQ-05,COALINDIA,opm_percentage,OPM mismatch computed 79.3 vs 18628.0 year 2021,WARNING
+DQ-05,COALINDIA,opm_percentage,OPM mismatch computed 77.5 vs 24721.0 year 2022,WARNING
+DQ-05,COALINDIA,opm_percentage,OPM mismatch computed 68.0 vs 44232.0 year 2023,WARNING
+DQ-05,COALINDIA,opm_percentage,OPM mismatch computed 66.3 vs 47971.0 year 2024,WARNING
+DQ-05,COALINDIA,opm_percentage,OPM mismatch computed 66.8 vs 46610.0 year TTM,WARNING
+DQ-05,HDFCBANK,opm_percentage,OPM mismatch computed 35.2 vs 3534.0 year 2013,WARNING
+DQ-05,HDFCBANK,opm_percentage,OPM mismatch computed 31.7 vs 5602.0 year 2014,WARNING
+DQ-05,HDFCBANK,opm_percentage,OPM mismatch computed 31.9 vs 7214.0 year 2015,WARNING
+DQ-05,HDFCBANK,opm_percentage,OPM mismatch computed 31.8 vs 9037.0 year 2016,WARNING
+DQ-05,HDFCBANK,opm_percentage,OPM mismatch computed 32.6 vs 11374.0 year 2017,WARNING
+DQ-05,HDFCBANK,opm_percentage,OPM mismatch computed 34.6 vs 13374.0 year 2018,WARNING
+DQ-05,HDFCBANK,opm_percentage,OPM mismatch computed 33.1 vs 16592.0 year 2019,WARNING
+DQ-05,HDFCBANK,opm_percentage,OPM mismatch computed 37.2 vs 14593.0 year 2020,WARNING
+DQ-05,HDFCBANK,opm_percentage,OPM mismatch computed 40.8 vs 16848.0 year 2021,WARNING
+DQ-05,HDFCBANK,opm_percentage,OPM mismatch computed 41.6 vs 20795.0 year 2022,WARNING
+DQ-05,HDFCBANK,opm_percentage,OPM mismatch computed 36.9 vs 29932.0 year 2023,WARNING
+DQ-05,HDFCBANK,opm_percentage,OPM mismatch computed 61.4 vs -44685.0 year 2024,WARNING
+DQ-05,HDFCBANK,opm_percentage,OPM mismatch computed 62.6 vs -57587.0 year TTM,WARNING
+DQ-05,HDFCLIFE,opm_percentage,OPM mismatch computed 96.3 vs 525.0 year 2013,WARNING
+DQ-05,HDFCLIFE,opm_percentage,OPM mismatch computed 96.5 vs 605.0 year 2014,WARNING
+DQ-05,HDFCLIFE,opm_percentage,OPM mismatch computed 96.8 vs 874.0 year 2015,WARNING
+DQ-05,HDFCLIFE,opm_percentage,OPM mismatch computed 94.7 vs 953.0 year 2016,WARNING
+DQ-05,HDFCLIFE,opm_percentage,OPM mismatch computed 96.8 vs 972.0 year 2017,WARNING
+DQ-05,HDFCLIFE,opm_percentage,OPM mismatch computed 96.7 vs 1074.0 year 2018,WARNING
+DQ-05,HDFCLIFE,opm_percentage,OPM mismatch computed 96.9 vs 1215.0 year 2019,WARNING
+DQ-05,HDFCLIFE,opm_percentage,OPM mismatch computed 96.1 vs 1141.0 year 2020,WARNING
+DQ-05,HDFCLIFE,opm_percentage,OPM mismatch computed 98.3 vs 1235.0 year 2021,WARNING
+DQ-05,HDFCLIFE,opm_percentage,OPM mismatch computed 98.8 vs 778.0 year 2022,WARNING
+DQ-05,HDFCLIFE,opm_percentage,OPM mismatch computed 99.9 vs 80.0 year 2023,WARNING
+DQ-05,HDFCLIFE,opm_percentage,OPM mismatch computed 99.5 vs 531.0 year 2024,WARNING
+DQ-05,HDFCLIFE,opm_percentage,OPM mismatch computed 99.3 vs 725.0 year TTM,WARNING
+DQ-05,HEROMOTOCO,opm_percentage,OPM mismatch computed 85.9 vs 3553.0 year 2014,WARNING
+DQ-05,HEROMOTOCO,opm_percentage,OPM mismatch computed 87.2 vs 3520.0 year 2015,WARNING
+DQ-05,HEROMOTOCO,opm_percentage,OPM mismatch computed 84.5 vs 4424.0 year 2016,WARNING
+DQ-05,HEROMOTOCO,opm_percentage,OPM mismatch computed 84.0 vs 4585.0 year 2017,WARNING
+DQ-05,HEROMOTOCO,opm_percentage,OPM mismatch computed 83.6 vs 5334.0 year 2018,WARNING
+DQ-05,HEROMOTOCO,opm_percentage,OPM mismatch computed 85.2 vs 5025.0 year 2019,WARNING
+DQ-05,HEROMOTOCO,opm_percentage,OPM mismatch computed 86.1 vs 4070.0 year 2020,WARNING
+DQ-05,HEROMOTOCO,opm_percentage,OPM mismatch computed 86.9 vs 4058.0 year 2021,WARNING
+DQ-05,HEROMOTOCO,opm_percentage,OPM mismatch computed 89.0 vs 3256.0 year 2022,WARNING
+DQ-05,HEROMOTOCO,opm_percentage,OPM mismatch computed 88.0 vs 4099.0 year 2023,WARNING
+DQ-05,HEROMOTOCO,opm_percentage,OPM mismatch computed 86.1 vs 5235.0 year 2024,WARNING
+DQ-05,HEROMOTOCO,opm_percentage,OPM mismatch computed 86.1 vs 5561.0 year TTM,WARNING
+DQ-05,HINDALCO,opm_percentage,OPM mismatch computed 90.4 vs 7699.0 year 2013,WARNING
+DQ-05,HINDALCO,opm_percentage,OPM mismatch computed 90.9 vs 8024.0 year 2014,WARNING
+DQ-05,HINDALCO,opm_percentage,OPM mismatch computed 91.5 vs 8844.0 year 2015,WARNING
+DQ-05,HINDALCO,opm_percentage,OPM mismatch computed 92.1 vs 7778.0 year 2016,WARNING
+DQ-05,HINDALCO,opm_percentage,OPM mismatch computed 87.7 vs 12317.0 year 2017,WARNING
+DQ-05,HINDALCO,opm_percentage,OPM mismatch computed 88.1 vs 13695.0 year 2018,WARNING
+DQ-05,HINDALCO,opm_percentage,OPM mismatch computed 88.1 vs 15511.0 year 2019,WARNING
+DQ-05,HINDALCO,opm_percentage,OPM mismatch computed 87.9 vs 14306.0 year 2020,WARNING
+DQ-05,HINDALCO,opm_percentage,OPM mismatch computed 86.7 vs 17559.0 year 2021,WARNING
+DQ-05,HINDALCO,opm_percentage,OPM mismatch computed 85.5 vs 28347.0 year 2022,WARNING
+DQ-05,HINDALCO,opm_percentage,OPM mismatch computed 89.8 vs 22666.0 year 2023,WARNING
+DQ-05,HINDALCO,opm_percentage,OPM mismatch computed 88.9 vs 23872.0 year 2024,WARNING
+DQ-05,HINDALCO,opm_percentage,OPM mismatch computed 87.5 vs 27931.0 year TTM,WARNING
+DQ-05,HINDUNILVR,opm_percentage,OPM mismatch computed 84.4 vs 4220.0 year 2013,WARNING
+DQ-05,HINDUNILVR,opm_percentage,OPM mismatch computed 83.7 vs 4759.0 year 2014,WARNING
+DQ-05,HINDUNILVR,opm_percentage,OPM mismatch computed 83.1 vs 5412.0 year 2015,WARNING
+DQ-05,HINDUNILVR,opm_percentage,OPM mismatch computed 81.6 vs 5910.0 year 2016,WARNING
+DQ-05,HINDUNILVR,opm_percentage,OPM mismatch computed 80.9 vs 6328.0 year 2017,WARNING
+DQ-05,HINDUNILVR,opm_percentage,OPM mismatch computed 78.9 vs 7499.0 year 2018,WARNING
+DQ-05,HINDUNILVR,opm_percentage,OPM mismatch computed 77.4 vs 8880.0 year 2019,WARNING
+DQ-05,HINDUNILVR,opm_percentage,OPM mismatch computed 75.2 vs 9861.0 year 2020,WARNING
+DQ-05,HINDUNILVR,opm_percentage,OPM mismatch computed 75.3 vs 11626.0 year 2021,WARNING
+DQ-05,HINDUNILVR,opm_percentage,OPM mismatch computed 75.5 vs 12857.0 year 2022,WARNING
+DQ-05,HINDUNILVR,opm_percentage,OPM mismatch computed 76.6 vs 14147.0 year 2023,WARNING
+DQ-05,HINDUNILVR,opm_percentage,OPM mismatch computed 76.3 vs 14659.0 year 2024,WARNING
+DQ-05,HINDUNILVR,opm_percentage,OPM mismatch computed 76.4 vs 14759.0 year TTM,WARNING
+DQ-05,ICICIBANK,opm_percentage,OPM mismatch computed 70.6 vs -15085.0 year 2013,WARNING
+DQ-05,ICICIBANK,opm_percentage,OPM mismatch computed 66.4 vs -13084.0 year 2014,WARNING
+DQ-05,ICICIBANK,opm_percentage,OPM mismatch computed 70.5 vs -16120.0 year 2015,WARNING
+DQ-05,ICICIBANK,opm_percentage,OPM mismatch computed 88.1 vs -26955.0 year 2016,WARNING
+DQ-05,ICICIBANK,opm_percentage,OPM mismatch computed 104.8 vs -37737.0 year 2017,WARNING
+DQ-05,ICICIBANK,opm_percentage,OPM mismatch computed 117.1 vs -44906.0 year 2018,WARNING
+DQ-05,ICICIBANK,opm_percentage,OPM mismatch computed 116.4 vs -50971.0 year 2019,WARNING
+DQ-05,ICICIBANK,opm_percentage,OPM mismatch computed 100.6 vs -45190.0 year 2020,WARNING
+DQ-05,ICICIBANK,opm_percentage,OPM mismatch computed 102.4 vs -44805.0 year 2021,WARNING
+DQ-05,ICICIBANK,opm_percentage,OPM mismatch computed 84.7 vs -26558.0 year 2022,WARNING
+DQ-05,ICICIBANK,opm_percentage,OPM mismatch computed 72.6 vs -17341.0 year 2023,WARNING
+DQ-05,ICICIBANK,opm_percentage,OPM mismatch computed 62.4 vs -14152.0 year 2024,WARNING
+DQ-05,ICICIBANK,opm_percentage,OPM mismatch computed 69.6 vs -31575.0 year TTM,WARNING
+DQ-05,ICICIGI,opm_percentage,OPM mismatch computed 104.5 vs -178.0 year 2013,WARNING
+DQ-05,ICICIGI,opm_percentage,OPM mismatch computed 105.2 vs -225.0 year 2014,WARNING
+DQ-05,ICICIGI,opm_percentage,OPM mismatch computed 105.2 vs -221.0 year 2015,WARNING
+DQ-05,ICICIGI,opm_percentage,OPM mismatch computed 87.3 vs 764.0 year 2016,WARNING
+DQ-05,ICICIGI,opm_percentage,OPM mismatch computed 87.8 vs 919.0 year 2017,WARNING
+DQ-05,ICICIGI,opm_percentage,OPM mismatch computed 103.8 vs -262.0 year 2018,WARNING
+DQ-05,ICICIGI,opm_percentage,OPM mismatch computed 85.0 vs 1669.0 year 2019,WARNING
+DQ-05,ICICIGI,opm_percentage,OPM mismatch computed 84.6 vs 1772.0 year 2020,WARNING
+DQ-05,ICICIGI,opm_percentage,OPM mismatch computed 83.0 vs 2072.0 year 2021,WARNING
+DQ-05,ICICIGI,opm_percentage,OPM mismatch computed 93.7 vs 1016.0 year 2022,WARNING
+DQ-05,ICICIGI,opm_percentage,OPM mismatch computed 92.9 vs 1264.0 year 2023,WARNING
+DQ-05,ICICIGI,opm_percentage,OPM mismatch computed 87.4 vs 2577.0 year 2024,WARNING
+DQ-05,ICICIGI,opm_percentage,OPM mismatch computed 85.6 vs 3363.0 year TTM,WARNING
+DQ-05,ICICIPRULI,opm_percentage,OPM mismatch computed 96.3 vs 745.0 year 2013,WARNING
+DQ-05,ICICIPRULI,opm_percentage,OPM mismatch computed 93.1 vs 1504.0 year 2014,WARNING
+DQ-05,ICICIPRULI,opm_percentage,OPM mismatch computed 95.2 vs 1655.0 year 2015,WARNING
+DQ-05,ICICIPRULI,opm_percentage,OPM mismatch computed 91.2 vs 1842.0 year 2016,WARNING
+DQ-05,ICICIPRULI,opm_percentage,OPM mismatch computed 95.2 vs 1806.0 year 2017,WARNING
+DQ-05,ICICIPRULI,opm_percentage,OPM mismatch computed 95.4 vs 1771.0 year 2018,WARNING
+DQ-05,ICICIPRULI,opm_percentage,OPM mismatch computed 98.7 vs 541.0 year 2019,WARNING
+DQ-05,ICICIPRULI,opm_percentage,OPM mismatch computed 101.5 vs -319.0 year 2020,WARNING
+DQ-05,ICICIPRULI,opm_percentage,OPM mismatch computed 100.5 vs -390.0 year 2021,WARNING
+DQ-05,ICICIPRULI,opm_percentage,OPM mismatch computed 103.4 vs -2163.0 year 2022,WARNING
+DQ-05,ICICIPRULI,opm_percentage,OPM mismatch computed 103.5 vs -1757.0 year 2023,WARNING
+DQ-05,ICICIPRULI,opm_percentage,OPM mismatch computed 102.0 vs -1829.0 year 2024,WARNING
+DQ-05,ICICIPRULI,opm_percentage,OPM mismatch computed 99.6 vs 321.0 year TTM,WARNING
+DQ-05,INDUSINDBK,opm_percentage,OPM mismatch computed 27.9 vs 286.0 year 2013,WARNING
+DQ-05,INDUSINDBK,opm_percentage,OPM mismatch computed 31.0 vs 335.0 year 2014,WARNING
+DQ-05,INDUSINDBK,opm_percentage,OPM mismatch computed 32.3 vs 288.0 year 2015,WARNING
+DQ-05,INDUSINDBK,opm_percentage,OPM mismatch computed 35.3 vs 329.0 year 2016,WARNING
+DQ-05,INDUSINDBK,opm_percentage,OPM mismatch computed 39.5 vs 379.0 year 2017,WARNING
+DQ-05,INDUSINDBK,opm_percentage,OPM mismatch computed 37.9 vs 942.0 year 2018,WARNING
+DQ-05,INDUSINDBK,opm_percentage,OPM mismatch computed 41.7 vs -437.0 year 2019,WARNING
+DQ-05,INDUSINDBK,opm_percentage,OPM mismatch computed 43.8 vs -553.0 year 2020,WARNING
+DQ-05,INDUSINDBK,opm_percentage,OPM mismatch computed 55.2 vs -2469.0 year 2021,WARNING
+DQ-05,INDUSINDBK,opm_percentage,OPM mismatch computed 51.4 vs -839.0 year 2022,WARNING
+DQ-05,INDUSINDBK,opm_percentage,OPM mismatch computed 42.7 vs 2067.0 year 2023,WARNING
+DQ-05,INDUSINDBK,opm_percentage,OPM mismatch computed 38.6 vs 2978.0 year 2024,WARNING
+DQ-05,INDUSINDBK,opm_percentage,OPM mismatch computed 41.0 vs 1323.0 year TTM,WARNING
+DQ-05,JIOFIN,opm_percentage,OPM mismatch computed 86.7 vs 88.0 year 2023,WARNING
+DQ-05,KOTAKBANK,opm_percentage,OPM mismatch computed 60.9 vs -1789.0 year 2013,WARNING
+DQ-05,KOTAKBANK,opm_percentage,OPM mismatch computed 58.8 vs -1379.0 year 2014,WARNING
+DQ-05,KOTAKBANK,opm_percentage,OPM mismatch computed 73.0 vs -3366.0 year 2015,WARNING
+DQ-05,KOTAKBANK,opm_percentage,OPM mismatch computed 56.6 vs -2263.0 year 2016,WARNING
+DQ-05,KOTAKBANK,opm_percentage,OPM mismatch computed 66.4 vs -3965.0 year 2017,WARNING
+DQ-05,KOTAKBANK,opm_percentage,OPM mismatch computed 66.9 vs -4141.0 year 2018,WARNING
+DQ-05,KOTAKBANK,opm_percentage,OPM mismatch computed 66.2 vs -5114.0 year 2019,WARNING
+DQ-05,KOTAKBANK,opm_percentage,OPM mismatch computed 67.4 vs -5005.0 year 2020,WARNING
+DQ-05,KOTAKBANK,opm_percentage,OPM mismatch computed 90.8 vs -9958.0 year 2021,WARNING
+DQ-05,KOTAKBANK,opm_percentage,OPM mismatch computed 91.0 vs -8512.0 year 2022,WARNING
+DQ-05,KOTAKBANK,opm_percentage,OPM mismatch computed 79.4 vs -5746.0 year 2023,WARNING
+DQ-05,KOTAKBANK,opm_percentage,OPM mismatch computed 83.7 vs -13382.0 year 2024,WARNING
+DQ-05,KOTAKBANK,opm_percentage,OPM mismatch computed 79.4 vs -14146.0 year TTM,WARNING
+DQ-05,SUNPHARMA,opm_percentage,OPM mismatch computed 26.8 vs 28.0 year 2024,WARNING
+DQ-05,INDIGO,opm_percentage,OPM mismatch computed 90.7 vs 855.0 year 2013,WARNING
+DQ-05,INDIGO,opm_percentage,OPM mismatch computed 96.1 vs 433.0 year 2014,WARNING
+DQ-05,INDIGO,opm_percentage,OPM mismatch computed 86.3 vs 1904.0 year 2015,WARNING
+DQ-05,INDIGO,opm_percentage,OPM mismatch computed 80.4 vs 3164.0 year 2016,WARNING
+DQ-05,INDIGO,opm_percentage,OPM mismatch computed 88.1 vs 2219.0 year 2017,WARNING
+DQ-05,INDIGO,opm_percentage,OPM mismatch computed 86.8 vs 3030.0 year 2018,WARNING
+DQ-05,INDIGO,opm_percentage,OPM mismatch computed 100.5 vs -151.0 year 2019,WARNING
+DQ-05,INDIGO,opm_percentage,OPM mismatch computed 88.6 vs 4069.0 year 2020,WARNING
+DQ-05,INDIGO,opm_percentage,OPM mismatch computed 100.0 vs 2.0 year 2021,WARNING
+DQ-05,INDIGO,opm_percentage,OPM mismatch computed 97.8 vs 558.0 year 2022,WARNING
+DQ-05,INDIGO,opm_percentage,OPM mismatch computed 88.0 vs 6521.0 year 2023,WARNING
+DQ-05,INDIGO,opm_percentage,OPM mismatch computed 76.3 vs 16331.0 year 2024,WARNING
+DQ-05,INDIGO,opm_percentage,OPM mismatch computed 79.2 vs 15908.0 year TTM,WARNING
+DQ-08,ADANIENSOL,tax,Tax rate -680.0% year 2015,WARNING
+DQ-08,ADANIENT,tax,Tax rate -4.0% year 2014,WARNING
+DQ-08,ADANIGREEN,tax,Tax rate -46.0% year 2020,WARNING
+DQ-08,ADANIPOWER,tax,Tax rate -1.4% year 2013,WARNING
+DQ-08,ADANIPOWER,tax,Tax rate -12.5% year 2016,WARNING
+DQ-08,ADANIPOWER,tax,Tax rate -0.1% year 2019,WARNING
+DQ-08,ADANIPOWER,tax,Tax rate -0.5% year 2023,WARNING
+DQ-08,AMBUJACEM,tax,Tax rate -0.1% year 2018,WARNING
+DQ-08,AXISBANK,tax,Tax rate -81.1% year 2018,WARNING
+DQ-08,BHARTIARTL,tax,Tax rate -2.9% year 2021,WARNING
+DQ-08,BHEL,tax,Tax rate -15.0% year 2020,WARNING
+DQ-08,BHEL,tax,Tax rate -6.6% year 2024,WARNING
+DQ-08,CANBK,tax,Tax rate -2.2% year 2020,WARNING
+DQ-08,DLF,tax,Tax rate -3.2% year 2014,WARNING
+DQ-08,DRREDDY,tax,Tax rate -0.4% year 2020,WARNING
+DQ-08,GODREJCP,tax,Tax rate -0.6% year 2019,WARNING
+DQ-08,GRASIM,tax,Tax rate -0.0% year 2020,WARNING
+DQ-08,HDFCLIFE,tax,Tax rate -6.2% year 2024,WARNING
+DQ-08,HINDALCO,tax,Tax rate -48.8% year 2016,WARNING
+DQ-08,JINDALSTEL,tax,Tax rate -12.7% year 2020,WARNING
+DQ-08,JIOFIN,tax,Tax rate 75.5% year 2023,WARNING
+DQ-08,JSWSTEEL,tax,Tax rate -1.0% year 2020,WARNING
+DQ-08,LODHA,tax,Tax rate -133.3% year 2021,WARNING
+DQ-08,LODHA,tax,Tax rate -1.8% year 2023,WARNING
+DQ-08,MOTHERSON,tax,Tax rate -0.3% year 2020,WARNING
+DQ-08,NAUKRI,tax,Tax rate 165.0% year 2015,WARNING
+DQ-08,NAUKRI,tax,Tax rate 1980.0% year 2017,WARNING
+DQ-08,NAUKRI,tax,Tax rate -75.4% year 2020,WARNING
+DQ-08,NAUKRI,tax,Tax rate 70.2% year 2023,WARNING
+DQ-08,NHPC,tax,Tax rate -0.1% year 2020,WARNING
+DQ-08,NHPC,tax,Tax rate -0.5% year 2022,WARNING
+DQ-08,NTPC,tax,Tax rate -0.0% year 2016,WARNING
+DQ-08,NTPC,tax,Tax rate -0.2% year 2019,WARNING
+DQ-08,POWERGRID,tax,Tax rate -0.1% year 2019,WARNING
+DQ-08,SHREECEM,tax,Tax rate -1.5% year 2015,WARNING
+DQ-08,TATAMOTORS,tax,Tax rate -0.0% year 2020,WARNING
+DQ-08,TATAMOTORS,tax,Tax rate -0.2% year 2021,WARNING
+DQ-08,TATAMOTORS,tax,Tax rate -0.9% year 2022,WARNING
+DQ-08,TATAMOTORS,tax,Tax rate -0.1% year 2024,WARNING
+DQ-08,TATASTEEL,tax,Tax rate -1.9% year 2013,WARNING
+DQ-08,TATASTEEL,tax,Tax rate -7.1% year 2015,WARNING
+DQ-08,TATASTEEL,tax,Tax rate -7.1% year 2017,WARNING
+DQ-08,TATASTEEL,tax,Tax rate -8.6% year 2024,WARNING
+DQ-08,TRENT,tax,Tax rate -990.0% year 2013,WARNING
+DQ-08,TRENT,tax,Tax rate 9900.0% year 2014,WARNING
+DQ-08,TRENT,tax,Tax rate 62.2% year 2022,WARNING
+DQ-08,ULTRACEMCO,tax,Tax rate -0.2% year 2020,WARNING
+DQ-08,UNIONBANK,tax,Tax rate -16.2% year 2017,WARNING
+DQ-08,UNIONBANK,tax,Tax rate -0.9% year 2021,WARNING
+DQ-08,UNITDSPR,tax,Tax rate 135.6% year 2013,WARNING
+DQ-08,UNITDSPR,tax,Tax rate -0.2% year 2014,WARNING
+DQ-08,UNITDSPR,tax,Tax rate -0.2% year 2015,WARNING
+DQ-08,VBL,tax,Tax rate -95.2% year 2012,WARNING
+DQ-08,VBL,tax,Tax rate 2475.0% year 2014,WARNING
+DQ-08,VEDL,tax,Tax rate -0.1% year 2014,WARNING
+DQ-08,VEDL,tax,Tax rate -0.2% year 2015,WARNING
+DQ-08,ZOMATO,tax,Tax rate -7.2% year 2024,WARNING
+DQ-08,INDIGO,tax,Tax rate 66.4% year 2019,WARNING
+DQ-08,INDIGO,tax,Tax rate -0.0% year 2024,WARNING
+DQ-09,AMBUJACEM,dividend_payout_ratio,Payout 151.0% year 2020,WARNING
+DQ-09,BHARTIARTL,dividend_payout_ratio,Payout 194.0% year 2018,WARNING
+DQ-09,BHARTIARTL,dividend_payout_ratio,Payout 244.0% year 2019,WARNING
+DQ-09,BHEL,dividend_payout_ratio,Payout 151.0% year 2018,WARNING
+DQ-09,BPCL,dividend_payout_ratio,Payout 106.0% year 2020,WARNING
+DQ-09,BPCL,dividend_payout_ratio,Payout 102.0% year 2021,WARNING
+DQ-09,BRITANNIA,dividend_payout_ratio,Payout 204.0% year 2021,WARNING
+DQ-09,COALINDIA,dividend_payout_ratio,Payout 121.0% year 2014,WARNING
+DQ-09,COALINDIA,dividend_payout_ratio,Payout 121.0% year 2016,WARNING
+DQ-09,COALINDIA,dividend_payout_ratio,Payout 133.0% year 2017,WARNING
+DQ-09,COALINDIA,dividend_payout_ratio,Payout 146.0% year 2018,WARNING
+DQ-09,DLF,dividend_payout_ratio,Payout 117.0% year 2016,WARNING
+DQ-09,HINDUNILVR,dividend_payout_ratio,Payout 104.0% year 2013,WARNING
+DQ-09,HINDUNILVR,dividend_payout_ratio,Payout 119.0% year 2021,WARNING
+DQ-09,ITC,dividend_payout_ratio,Payout 101.0% year 2021,WARNING
+DQ-09,MM,dividend_payout_ratio,Payout 205.0% year 2020,WARNING
+DQ-09,NAUKRI,dividend_payout_ratio,Payout 150.0% year 2015,WARNING
+DQ-09,NESTLEIND,dividend_payout_ratio,Payout 168.0% year 2019,WARNING
+DQ-09,SBIN,dividend_payout_ratio,Payout 859.0% year 2017,WARNING
+DQ-09,TATAPOWER,dividend_payout_ratio,Payout 210.0% year 2015,WARNING
+DQ-09,TECHM,dividend_payout_ratio,Payout 150.0% year 2024,WARNING
+DQ-09,TORNTPHARM,dividend_payout_ratio,Payout 105.0% year 2022,WARNING
+DQ-09,VEDL,dividend_payout_ratio,Payout 357.0% year 2023,WARNING
+DQ-09,VEDL,dividend_payout_ratio,Payout 259.0% year 2024,WARNING
+DQ-09,INDIGO,dividend_payout_ratio,Payout 123.0% year 2019,WARNING
+DQ-11,MM,eps,EPS sign mismatch eps 1.0 vs profit -321 year 2020,WARNING
+DQ-11,NAUKRI,eps,EPS sign mismatch eps 2.0 vs profit -14 year 2015,WARNING
+DQ-11,TATAPOWER,eps,EPS sign mismatch eps -1.0 vs profit 12 year 2014,WARNING
+DQ-13,JIOFIN,year,Only 3 years in profitandloss (<5),WARNING
+DQ-13,JIOFIN,year,Only 2 years in balancesheet (<5),WARNING
+DQ-13,JIOFIN,year,Only 2 years in cashflow (<5),WARNING
+DQ-14,ADANIENSOL,sales,YoY spike 1575% year 2016,WARNING
+DQ-14,BAJAJHLDNG,sales,YoY spike 226% year 2024,WARNING
+DQ-14,ICICIPRULI,sales,YoY spike 296% year 2021,WARNING
+DQ-14,JIOFIN,sales,YoY spike 4022% year 2024,WARNING
+DQ-14,VEDL,sales,YoY spike 2306% year 2014,WARNING

@@ -1,0 +1,59 @@
+metrics:
+  net_profit_margin_pct: {min: -50, max: 50, default_min: 0, default_max: 50}
+  operating_profit_margin_pct: {min: -50, max: 80, default_min: 0, default_max: 80}
+  return_on_equity_pct: {min: -50, max: 100, default_min: 0, default_max: 100}
+  return_on_capital_employed_pct: {min: -50, max: 100, default_min: 0, default_max: 100}
+  return_on_assets_pct: {min: -20, max: 50, default_min: 0, default_max: 50}
+  debt_to_equity: {min: 0, max: 5, default_min: 0, default_max: 5}
+  interest_coverage: {min: 0, max: 100, default_min: 0, default_max: 100}
+  asset_turnover: {min: 0, max: 5, default_min: 0, default_max: 5}
+  fcf_conversion_pct: {min: -200, max: 300, default_min: -100, default_max: 300}
+  capex_intensity_pct: {min: 0, max: 50, default_min: 0, default_max: 50}
+  dividend_payout_ratio_pct: {min: 0, max: 100, default_min: 0, default_max: 100}
+  dividend_yield_pct: {min: 0, max: 15, default_min: 0, default_max: 15}
+  revenue_cagr_5yr: {min: -20, max: 50, default_min: -20, default_max: 50}
+  revenue_cagr_3yr: {min: -30, max: 60, default_min: -20, default_max: 60}
+  pat_cagr_5yr: {min: -30, max: 80, default_min: -30, default_max: 80}
+  eps_cagr_5yr: {min: -30, max: 80, default_min: -30, default_max: 80}
+  fcf_yield_pct: {min: -10, max: 20, default_min: -10, default_max: 20}
+  free_cash_flow_cr: {min: -5000, max: 100000, default_min: 0, default_max: 100000}
+  price_to_earnings: {min: 0, max: 200, default_min: 0, default_max: 50}
+  price_to_book: {min: 0, max: 30, default_min: 0, default_max: 10}
+  market_cap_crore: {min: 0, max: 500000, default_min: 1000, default_max: 500000}
+  net_profit: {min: -10000, max: 100000, default_min: 0, default_max: 100000}
+  sales: {min: 0, max: 500000, default_min: 0, default_max: 500000}
+
+# Sprint 3 Day 16 preset thresholds (spec intent, tuned so each preset returns 5-50 on this dataset)
+presets:
+  Quality Compounder:
+    return_on_equity_pct: {min: 15, max: 100}
+    debt_to_equity: {min: 0, max: 1.0}
+    free_cash_flow_cr: {min: 0, max: 100000}
+    revenue_cagr_5yr: {min: 10, max: 50}
+  Value Pick:
+    price_to_earnings: {min: 0, max: 30}
+    price_to_book: {min: 0, max: 4.0}
+    debt_to_equity: {min: 0, max: 2.0}
+    dividend_yield_pct: {min: 1, max: 15}
+  Growth Accelerator:
+    revenue_cagr_5yr: {min: 8, max: 50}
+    pat_cagr_5yr: {min: 12, max: 80}
+    debt_to_equity: {min: 0, max: 2.0}
+  Dividend Champion:
+    dividend_yield_pct: {min: 2, max: 15}
+    dividend_payout_ratio_pct: {min: 0, max: 80}
+    free_cash_flow_cr: {min: 0, max: 100000}
+  Debt-Free Blue Chip:
+    debt_to_equity: {min: 0, max: 0.05}
+    return_on_equity_pct: {min: 12, max: 100}
+    sales: {min: 5000, max: 500000}
+  Turnaround Watch:
+    revenue_cagr_3yr: {min: 10, max: 60}
+    free_cash_flow_cr: {min: 0, max: 100000}
+    debt_to_equity: {min: 0, max: 2.0}
+
+screener:
+  winsor_p_low: 10
+  winsor_p_high: 90
+  fcf_yield_placeholder: 0
+  financials_de_skip: true

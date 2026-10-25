@@ -1,0 +1,93 @@
+company_id,cluster_id,cluster_name,distance_from_centroid,broad_sector,cluster
+ABB,1,Distressed or Turnaround,0.4901188646491002,Industrials,1
+ADANIENSOL,0,Defensive Dividend Payers,0.6931454634613218,Energy,0
+ADANIENT,0,Defensive Dividend Payers,0.5757953441594673,Industrials,0
+ADANIGREEN,3,Value Cyclicals,2.7811980759638875,Energy,3
+ADANIPORTS,4,Emerging Growth,1.0623650905939113,Industrials,4
+ADANIPOWER,0,Defensive Dividend Payers,1.0930046461696692,Energy,0
+AMBUJACEM,1,Distressed or Turnaround,0.7823123727949186,Materials,1
+APOLLOHOSP,0,Defensive Dividend Payers,0.6485398249032093,Healthcare,0
+ASIANPAINT,1,Distressed or Turnaround,0.736899625522054,Materials,1
+ATGL,0,Defensive Dividend Payers,0.5562397510711142,Energy,0
+AXISBANK,3,Value Cyclicals,1.2825432348597419,Financials,3
+BAJAJ-AUTO,1,Distressed or Turnaround,0.1600467465388858,Consumer Discretionary,1
+BAJAJFINSV,3,Value Cyclicals,2.0521753829798848,Financials,3
+BAJAJHLDNG,4,Emerging Growth,2.4272978532760114,Financials,4
+BAJFINANCE,3,Value Cyclicals,2.3822544233751604,Financials,3
+BANKBARODA,3,Value Cyclicals,2.217389299447008,Financials,3
+BEL,2,High-Quality Compounders,0.635144668047467,Industrials,2
+BHARTIARTL,4,Emerging Growth,1.3551707235714743,Communication Services,4
+BHEL,1,Distressed or Turnaround,1.918792406428965,Industrials,1
+BOSCHLTD,1,Distressed or Turnaround,0.4905481632902347,Consumer Discretionary,1
+BPCL,1,Distressed or Turnaround,0.7986046596061753,Energy,1
+BRITANNIA,1,Distressed or Turnaround,0.32733321973898627,Consumer Staples,1
+CANBK,3,Value Cyclicals,3.517087694520767,Financials,3
+CHOLAFIN,3,Value Cyclicals,0.7294169265238868,Financials,3
+CIPLA,4,Emerging Growth,1.031844532530243,Healthcare,4
+COALINDIA,4,Emerging Growth,1.2922828464328193,Materials,4
+DABUR,1,Distressed or Turnaround,0.3735869145650536,Consumer Staples,1
+DIVISLAB,1,Distressed or Turnaround,0.5509239868773449,Healthcare,1
+DLF,1,Distressed or Turnaround,1.9065799195587496,Real Estate,1
+DMART,0,Defensive Dividend Payers,0.5329771309860315,Consumer Discretionary,0
+DRREDDY,1,Distressed or Turnaround,0.8077214532759641,Healthcare,1
+EICHERMOT,1,Distressed or Turnaround,0.6178934284805747,Consumer Discretionary,1
+GAIL,1,Distressed or Turnaround,0.6524131182377894,Energy,1
+GODREJCP,1,Distressed or Turnaround,0.5175974821726457,Consumer Staples,1
+GRASIM,0,Defensive Dividend Payers,1.8314693102611537,Industrials,0
+HAL,2,High-Quality Compounders,0.6351446680474679,Industrials,2
+HAVELLS,1,Distressed or Turnaround,0.8720697133496086,Industrials,1
+HCLTECH,1,Distressed or Turnaround,0.7168539547378505,Information Technology,1
+HDFCBANK,4,Emerging Growth,2.4431276600421987,Financials,4
+HDFCLIFE,4,Emerging Growth,1.3717566888911954,Financials,4
+HEROMOTOCO,4,Emerging Growth,1.8781699884103362,Consumer Discretionary,4
+HINDALCO,4,Emerging Growth,0.800011930883814,Materials,4
+HINDUNILVR,4,Emerging Growth,0.9597484487203585,Consumer Staples,4
+ICICIBANK,4,Emerging Growth,1.835008657094071,Financials,4
+ICICIGI,4,Emerging Growth,0.820963616983514,Financials,4
+ICICIPRULI,4,Emerging Growth,1.1257334284034426,Financials,4
+INDIGO,4,Emerging Growth,1.595096156497403,Consumer Discretionary,4
+INDUSINDBK,3,Value Cyclicals,1.0477521846934859,Financials,3
+INFY,1,Distressed or Turnaround,0.8706202246457077,Information Technology,1
+IOC,1,Distressed or Turnaround,1.3776826623811358,Energy,1
+IRCTC,0,Defensive Dividend Payers,0.6576198282516632,Consumer Discretionary,0
+IRFC,4,Emerging Growth,2.3610768616881126,Financials,4
+ITC,1,Distressed or Turnaround,0.7774528049911813,Consumer Staples,1
+JINDALSTEL,1,Distressed or Turnaround,1.039462769359305,Materials,1
+JIOFIN,4,Emerging Growth,0.8082252476657898,Financials,4
+JSWENERGY,1,Distressed or Turnaround,1.2255425936383735,Energy,1
+JSWSTEEL,0,Defensive Dividend Payers,0.5052315264431493,Materials,0
+KOTAKBANK,4,Emerging Growth,0.8604740078256506,Financials,4
+LICI,1,Distressed or Turnaround,0.7052550477697836,Financials,1
+LODHA,1,Distressed or Turnaround,1.5617838850492243,Real Estate,1
+LT,1,Distressed or Turnaround,0.6392858957882808,Industrials,1
+LTIM,0,Defensive Dividend Payers,1.5668533951330204,Information Technology,0
+MM,1,Distressed or Turnaround,1.0336260540251934,Consumer Discretionary,1
+MARUTI,1,Distressed or Turnaround,0.4823984374119114,Consumer Discretionary,1
+MOTHERSON,1,Distressed or Turnaround,0.5564174392227903,Consumer Discretionary,1
+NAUKRI,0,Defensive Dividend Payers,0.5219377324532002,Communication Services,0
+NESTLEIND,0,Defensive Dividend Payers,0.7235650620370444,Consumer Staples,0
+NHPC,1,Distressed or Turnaround,1.4866824419359514,Energy,1
+NTPC,1,Distressed or Turnaround,0.7485195547416187,Energy,1
+ONGC,1,Distressed or Turnaround,1.4349397098477266,Energy,1
+PFC,3,Value Cyclicals,2.974152333623167,Financials,3
+PIDILITIND,1,Distressed or Turnaround,0.653864018126848,Materials,1
+PNB,3,Value Cyclicals,1.3893266991345108,Financials,3
+POWERGRID,4,Emerging Growth,1.4659152954564414,Energy,4
+RECLTD,3,Value Cyclicals,2.404050221135678,Financials,3
+RELIANCE,1,Distressed or Turnaround,1.5775216185924497,Energy,1
+SBILIFE,0,Defensive Dividend Payers,1.0363773911860508,Financials,0
+SBIN,1,Distressed or Turnaround,1.9433483681326613,Financials,1
+SHREECEM,1,Distressed or Turnaround,0.47436637031983114,Materials,1
+SHRIRAMFIN,3,Value Cyclicals,1.3260810263495677,Financials,3
+SIEMENS,1,Distressed or Turnaround,0.6141305499326085,Industrials,1
+SUNPHARMA,1,Distressed or Turnaround,0.49112613216239764,Healthcare,1
+TATACONSUM,0,Defensive Dividend Payers,0.5125369733280123,Consumer Staples,0
+TATAMOTORS,1,Distressed or Turnaround,1.5890119924075499,Consumer Discretionary,1
+TATAPOWER,0,Defensive Dividend Payers,0.605833299453375,Energy,0
+TATASTEEL,1,Distressed or Turnaround,0.45521540628385837,Materials,1
+TCS,1,Distressed or Turnaround,1.8427018716416537,Information Technology,1
+TECHM,1,Distressed or Turnaround,0.46603518163437985,Information Technology,1
+TITAN,0,Defensive Dividend Payers,0.6392949708576666,Consumer Discretionary,0
+TORNTPHARM,1,Distressed or Turnaround,0.530719214905392,Healthcare,1
+TRENT,0,Defensive Dividend Payers,2.3672777850929347,Consumer Discretionary,0
+TVSMOTOR,0,Defensive Dividend Payers,0.7835058387136911,Consumer Discretionary,0

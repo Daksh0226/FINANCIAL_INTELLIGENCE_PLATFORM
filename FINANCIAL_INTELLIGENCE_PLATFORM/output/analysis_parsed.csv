@@ -1,0 +1,66 @@
+analysis_id,company_id,metric_type,period_years,value_pct,field,years,raw
+1,HDFCBANK,compounded_sales_growth,10,21.0,compounded_sales_growth,10,10 Years: 21%
+1,HDFCBANK,compounded_profit_growth,10,22.0,compounded_profit_growth,10,10 Years: 22%
+1,HDFCBANK,stock_price_cagr,10,15.0,stock_price_cagr,10,10 Years:     15%
+1,HDFCBANK,roe,10,17.0,roe,10,10 Years:     17%
+2,HDFCBANK,compounded_sales_growth,5,22.0,compounded_sales_growth,5,5 Years:       22%
+2,HDFCBANK,compounded_profit_growth,5,23.0,compounded_profit_growth,5,5 Years:           23%
+2,HDFCBANK,stock_price_cagr,5,8.0,stock_price_cagr,5,      5 Years:       8%
+2,HDFCBANK,roe,5,17.0,roe,5,5 Years:       17%
+3,HDFCBANK,compounded_sales_growth,3,30.0,compounded_sales_growth,3,3 Years:       30%
+3,HDFCBANK,compounded_profit_growth,3,26.0,compounded_profit_growth,3,3 Years:           26%
+3,HDFCBANK,stock_price_cagr,3,8.0,stock_price_cagr,3,      3 Years:       8%
+3,HDFCBANK,roe,3,17.0,roe,3,3 Years:       17%
+4,HDFCBANK,stock_price_cagr,1,13.0,stock_price_cagr,1,      1 Year:        13%
+5,INFY,compounded_sales_growth,10,12.0,compounded_sales_growth,10,10 Years:     12%
+5,INFY,compounded_profit_growth,10,9.0,compounded_profit_growth,10,10 Years:         9%
+5,INFY,stock_price_cagr,10,15.0,stock_price_cagr,10,     10 Years:     15%
+5,INFY,roe,10,27.0,roe,10,10 Years:      27%
+6,INFY,compounded_sales_growth,5,13.0,compounded_sales_growth,5,5 Years:       13%
+6,INFY,compounded_profit_growth,5,11.0,compounded_profit_growth,5,5 Years:           11%
+6,INFY,stock_price_cagr,5,22.0,stock_price_cagr,5,       5 Years:     22%
+6,INFY,roe,5,29.0,roe,5,5 Years:        29%
+7,INFY,compounded_sales_growth,3,5.0,compounded_sales_growth,3,3 Years:       5%
+7,INFY,compounded_profit_growth,3,10.0,compounded_profit_growth,3,3 Years:           10%
+7,INFY,stock_price_cagr,3,4.0,stock_price_cagr,3,       3 Years:     4%
+7,INFY,roe,3,31.0,roe,3,3 Years:        31%
+8,INFY,stock_price_cagr,1,27.0,stock_price_cagr,1,       1 Year:       27%
+9,SBILIFE,compounded_sales_growth,10,23.0,compounded_sales_growth,10,10 Years:     23%
+9,SBILIFE,compounded_profit_growth,10,9.0,compounded_profit_growth,10,10 Years:          9%
+9,SBILIFE,stock_price_cagr,10,9.0,stock_price_cagr,10,    10 Years:      9%
+9,SBILIFE,roe,10,16.0,roe,10,10 Years:      16%
+10,SBILIFE,compounded_sales_growth,5,24.0,compounded_sales_growth,5,5 Years:       24%
+10,SBILIFE,compounded_profit_growth,5,6.0,compounded_profit_growth,5,5 Years:            6%
+10,SBILIFE,stock_price_cagr,5,8.0,stock_price_cagr,5,     5 Years:       8%
+10,SBILIFE,roe,5,14.0,roe,5,5 Years          14%
+11,SBILIFE,compounded_sales_growth,3,17.0,compounded_sales_growth,3,3 Years:       17%
+11,SBILIFE,compounded_profit_growth,3,9.0,compounded_profit_growth,3,3 Years:            9%
+11,SBILIFE,stock_price_cagr,3,7.0,stock_price_cagr,3,     3 Years:       7%
+11,SBILIFE,roe,3,13.0,roe,3,3 Years:         13%
+12,SBILIFE,stock_price_cagr,1,-2.0,stock_price_cagr,1,     1 Year:         -2%
+13,TCS,compounded_sales_growth,10,11.0,compounded_sales_growth,10,10 Years:     11%             
+13,TCS,compounded_profit_growth,10,9.0,compounded_profit_growth,10,10 Years:          9%
+13,TCS,stock_price_cagr,10,14.0,stock_price_cagr,10,    10 Years:      14%
+13,TCS,roe,10,40.0,roe,10,10 Years:       40%
+14,TCS,compounded_sales_growth,5,10.0,compounded_sales_growth,5,5 Years:       10%             
+14,TCS,compounded_profit_growth,5,8.0,compounded_profit_growth,5,5 Years:            8%
+14,TCS,stock_price_cagr,5,16.0,stock_price_cagr,5,      5 Years:      16%
+14,TCS,roe,5,44.0,roe,5,5 Years:          44%
+15,TCS,compounded_sales_growth,3,14.0,compounded_sales_growth,3,3 Years:       14%             
+15,TCS,compounded_profit_growth,3,12.0,compounded_profit_growth,3,3 Years:            12%
+15,TCS,stock_price_cagr,3,8.0,stock_price_cagr,3,      3 Years:      8%
+15,TCS,roe,3,47.0,roe,3,3 Years:          47%
+16,TCS,stock_price_cagr,1,16.0,stock_price_cagr,1,      1 Year:       16%
+17,WIPRO,compounded_sales_growth,10,8.0,compounded_sales_growth,10,10 Years:     8%
+17,WIPRO,compounded_profit_growth,10,3.0,compounded_profit_growth,10,10 Years:          3%
+17,WIPRO,stock_price_cagr,10,12.0,stock_price_cagr,10,    10 Years:     12%
+17,WIPRO,roe,10,18.0,roe,10,10 Years:        18%
+18,WIPRO,compounded_sales_growth,5,9.0,compounded_sales_growth,5,5 Years:       9%
+18,WIPRO,compounded_profit_growth,5,4.0,compounded_profit_growth,5,5 Years:            4%
+18,WIPRO,stock_price_cagr,5,20.0,stock_price_cagr,5,      5 Years:     20%
+18,WIPRO,roe,5,17.0,roe,5,5 Years:          17%
+19,WIPRO,compounded_sales_growth,3,13.0,compounded_sales_growth,3,3 Years:      13%
+19,WIPRO,compounded_profit_growth,3,0.0,compounded_profit_growth,3,3 Years:            0%
+19,WIPRO,stock_price_cagr,3,-1.0,stock_price_cagr,3,      3 Years:      -1%
+19,WIPRO,roe,3,17.0,roe,3,3 Years:          17%
+20,WIPRO,stock_price_cagr,1,39.0,stock_price_cagr,1,      1 Year:       39%
